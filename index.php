@@ -1,3 +1,7 @@
+<?php
+include 'common/common.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -44,16 +48,27 @@
                 <div class="clearfix"></div>
             </a>
 
-            <a class="btn btn-2" href="service.html">服務</a>
-            <a class="btn btn-2" href="environment.html">環境</a>
-            <a class="btn btn-2" href="about.html">商品 </a>
-            <a class="btn btn-2" href="contact.html">聯絡</a>
+            <a class="btn btn-2" href="service.html">服 務</a>
+            <a class="btn btn-2" href="environment.html">環 境</a>
+            <a class="btn btn-2" href="about.html">商 品 </a>
+            <a class="btn btn-2" href="contact.html">聯 絡</a>
         </nav>
         <div id="loginhead" class="loginhead">
             <ul>
-                <li><a class="login" href="info.html">訂閱電子報</a></li>
-                <li><a class="login" href="login.html">會員登入</a></li>
+
+                <?php
+
+                if(isset($_SESSION['name']))
+                {
+                    echo '<li><a class="login" href="#">'.$_SESSION['name']. '會員您好 <span><a href="member/logout.php">登出</a><span></a></li>';
+                }else{
+                    echo '<li><a class="login" href="member/login.php">會員登入</a></li>';
+                }
+
+                ?>
                 <li><a class="login" href="buy.html"><span id="number"></span>個商品</a></li>
+                <li><a class="login" href="info.html">訂閱電子報</a></li>
+
             </ul>
         </div>
     </div>
@@ -65,7 +80,7 @@
         <div class="banner">
             <div class="txt shell">
 
-                <h5>VISIT ONE OF OUR MULTIPLE</h5>
+                <h5 class="bannerTxt">VISIT ONE OF OUR MULTIPLE</h5>
                 <h1 class="shadow">Sessions of Relaxation</h1>
                 <hr class="room">
                 <div class="wrapperGroup">
@@ -89,7 +104,6 @@
 <!--====title====-->
 <div class="container">
     <div class="bookingtitle">
-        <!--<div class="hrpic"><img src="assets/images/hr.png" alt=""></div>-->
         <h5 class="SectionTitle">WELCOME</h5>
         <h2 class="Btitle">極致舒緩</h2>
 

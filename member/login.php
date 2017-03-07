@@ -1,7 +1,6 @@
 <?php
-//開啟php錯誤回報
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
+
+include '../common/common.php';
 
 //接收參數
 $account = isset($_POST['account']) ? $_POST['account'] : '';
@@ -10,6 +9,10 @@ $password = isset($_POST['password']) ? $_POST['password'] : '';
 
 //資料庫連線
 $con = mysqli_connect("localhost", "root", "root", "belle");
+
+//跳脫特殊字元
+$account = mysqli_real_escape_string($con,$account);
+
 
 if (mysqli_connect_errno()) {
     echo "Failed to connect to MySQL: " . mysqli_connect_error();
@@ -20,25 +23,27 @@ if (mysqli_connect_errno()) {
 //判定有無輸入帳號密碼，有則進行資料比對
 if ($account != '' && $password != '') {
 
-    $sql = "SELECT `account`,`password` FROM `member` LIMIT 0,30";
+    $sql = "SELECT `account`,`password`,`name` FROM `member` WHERE `account` = '$account' LIMIT 0,1";
     $result = $con->query($sql);
+
+    if($result->num_rows <= 0)
+    {
+        echo '查無此帳號...<br><a href="login.php">回上一頁</a>';
+        return;
+    }
 
     while($row = mysqli_fetch_array($result)) {
 
-        if($row['account'] == $account)
+
+
+        if($row['password'] == $password)
         {
-            if($row['password'] == $password)
-            {
-                echo '登入成功！';
-                return;
-            }
+            $_SESSION['name'] = $row['name'];
+            header("Location: http://localhost/");
 
-            echo '密碼錯誤';
-            return;
+        }else{
+            echo '警告：密碼錯誤';
         }
-
-        echo '查無此帳號';
-        return;
     }
 }
 

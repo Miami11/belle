@@ -8,6 +8,7 @@ body {
   color: #222;
   font-size: 16px;
   line-height: 1.5;
+  font-weight: lighter;
 }
 .textHr {
 
@@ -15,7 +16,7 @@ body {
   width: 105px;
   height: 100px;
   text-align: center;
-  left: 325px;
+  margin: auto;
 }
 
 .textHr:before,
@@ -51,10 +52,14 @@ body {
 .bookingtitle {
   margin: auto;
   text-align: center;
-  display: inline-block;
 }
 
-
+.btn {
+  text-decoration: none;
+  text-transform: uppercase;
+  /*max-width: 160px;*/
+  position: relative;
+}
 
 .btn-2:after{
 /*.btn-2:before {*/
@@ -63,10 +68,11 @@ body {
   bottom: 0px;
   content: " ";
   display: block;
-  margin: 0 auto;
+  margin: auto;
   position: relative;
   transition: all 280ms ease-in-out;
   width: 0;
+  opacity: 0;
 }
 
 .btn-2:hover:after{
@@ -75,6 +81,7 @@ body {
   border-color: #c54c82;
   transition: width 350ms ease-in-out;
   width: 70%;
+  opacity: 1;
 }
 
 .btn-2:hover:before {
@@ -96,6 +103,7 @@ body {
 
 a:hover {
   color: #d8a0b7;
+  transition: .5s;
 
 }
 
@@ -116,7 +124,7 @@ nav a {
   color: #212121;
   text-align: left;
   vertical-align: bottom;
-  letter-spacing: 5px;
+  /*letter-spacing: 5px;*/
 }
 
 
@@ -129,7 +137,9 @@ nav a {
 
 .loginhead{
   float: right;
-
+  right: 0;
+  bottom: 20px;
+  position: absolute;
 }
 
 .loginhead li{
@@ -142,8 +152,12 @@ nav a {
   font-size: 13px;
   margin-right: 12px;
 
-
 }
+
+.loginhead a:hover{
+  color:#d8a0b7;
+}
+
 nav {
   padding: 20px 0;
   display: inline-block;
@@ -152,6 +166,7 @@ nav {
 .header {
    float: left;
   width: 100%;
+  position: relative;
 }
 .mainBtn {
   display: inline-block;
@@ -182,8 +197,8 @@ nav {
 .mBtn {
   display: inline-block;
   margin: 40px;
-  background-color: #ffa200;
-  border-color: #ffa200;
+  background-color: #c54c82;
+  border-color: #b44577;
   color: #fff;
   position: relative;
   padding: 16px 23px;
@@ -864,20 +879,20 @@ li i {
 
 .textG a {
   font-size: 22px;
-  color: #ffa200;
+  color: #c54c82;
   text-decoration: none;
   padding: 6px 0;
   display: block;
   font-weight: bold; }
 
 .textG a:hover {
-  color: #ff7e00; }
+  color: #d8a0b7; }
 
 .textcenter {
   text-align: center; }
 
 .round {
-  background: linear-gradient(45deg, #ff7e00 0%, #f5bf2f 100%);
+  background: linear-gradient(45deg, #c54c82 0%, #d8a0b7 100%);
   width: 70px;
   height: 70px;
   font-size: 32px;
