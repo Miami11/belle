@@ -129,7 +129,11 @@ nav a {
   /*letter-spacing: 5px;*/
 }
 
-
+.fixed{
+  position: fixed;
+  top: 0;
+  left: 0;
+}
 
 .header div {
   display: inline-block;
@@ -794,6 +798,19 @@ hr {
   width: 100%;
   margin-bottom: 100px;
 }
+.serviceSection .pic {
+  background-image: url("../images/servicebanner6.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  height: 400px;
+  width: 100%;
+  margin-bottom: 100px;
+  /*filter: brightness(50%);*/
+
+
+}
 
 .wrapperReal .pic {
   background-image: url("../images/banner1.jpg");
@@ -908,6 +925,16 @@ hr {
   background-attachment: fixed;
   margin-bottom: 100px;
 
+}
+.ServiceBook{
+  background-image: url("../images/serviceGirl.jpg");
+  height: 60vh;
+  background-size: cover;
+  background-position: bottom;
+  /*filter: brightness(50%); */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin-bottom: 100px;
 }
 .footer{
   margin-bottom: 100px;
@@ -1108,4 +1135,12 @@ margin-bottom: 100px;
     margin: auto;
     box-sizing: border-box;
   }
+}
+
+#introduce{
+  opacity: 0;
+}
+
+#expert{
+  opacity: 0;
 }

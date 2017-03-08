@@ -9,6 +9,7 @@ include 'common/common.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>index</title>
     <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <link rel="stylesheet" href="assets/css/mainstyle.css">
 </head>
@@ -75,8 +76,8 @@ include 'common/common.php';
 
 <!--====banner====-->
 <div class="section">
-    <div class="col-xs-12 col-sm-12 pic">
-        <div class="banner">
+    <div id="prlx_lyr_1" class="pic col-xs-12 col-sm-12">
+        <div id="content_layer" class="banner">
             <div class="txt shell">
 
                 <h5 class="bannerTxt">VISIT ONE OF OUR MULTIPLE</h5>
@@ -311,66 +312,31 @@ include 'common/common.php';
         </div>
     </div>
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"> </script>
+<script type="text/javascript">
+    var navTop = 105px;
+    var scrollbarTop = 0;
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
-
-<script>
-
-    new Waypoint({
-        element: document.getElementById('element-waypoint'),
-        handler: function (direction) {
-            //notify(this.element.id + ' triggers at ' + this.triggerPoint)
-            var item = document.getElementById("mainBtn");
-            item.className += " animated";
-            item.className += " zoomIn";
-
-        },
-        offset: '75%'
-    })
-
-    new Waypoint({
-        element: document.getElementById('introduce'),
-        handler: function (direction) {
-
-            var obj = document.getElementById('introduce');
-            obj.style.opacity = 1;
-            var item_array = [];
-            item_array.push(document.getElementById("introduce_item_0"));
-            item_array.push(document.getElementById("introduce_item_1"));
-            item_array.push(document.getElementById("introduce_item_2"));
-
-            for (var num in item_array) {
-                item_array[num].className += " animated";
-                item_array[num].className += " zoomIn";
+    $(window).scroll(
+        function(){
+            scrollbarTop = $(window).scrollTop();
+            if(scrollbarTop >= navTop){
+                $('nav').addClass('fixed');
+            }else{
+                $('nav').removeClass('fixed');
             }
-
-        },
-        offset: '75%'
-    })
-
-
-    new Waypoint({
-        element: document.getElementById('expert'),
-        handler: function (direction) {
-
-            var obj = document.getElementById('expert');
-            obj.style.opacity = 1;
-            var item_array = [];
-            item_array.push(document.getElementById("expert_item_0"));
-            item_array.push(document.getElementById("expert_item_1"));
-            item_array.push(document.getElementById("expert_item_2"));
-
-            for (var num in item_array) {
-                item_array[num].className += " animated";
-                item_array[num].className += " zoomIn";
-            }
-
-        },
-        offset: '75%'
-    })
-
+        }
+    )
 </script>
 
+<script>
+    function parallax(){
+        var prlx_lyr_1 = document.getElementById('prlx_lyr_1');
+        prlx_lyr_1.style.top = -(window.PageYOffset / 4)+'px';
+    }
+
+    window.addEventListener("scroll", parallax, false);
+</script>
 
 </body>
 </html>
