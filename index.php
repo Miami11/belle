@@ -12,6 +12,7 @@ include 'common/common.php';
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <link rel="stylesheet" href="assets/css/mainstyle.css">
+
 </head>
 <body>
 
@@ -19,12 +20,12 @@ include 'common/common.php';
 <div class="container nav">
     <input type="checkbox" id="ham">
     <input type="checkbox" id="point">
-<!--    <div class="container top">-->
-<!---->
-<!---->
-<!--        <div class="clearfix"></div>-->
-<!--    </div>-->
-<!--    <hr>-->
+    <!--    <div class="container top">-->
+    <!---->
+    <!---->
+    <!--        <div class="clearfix"></div>-->
+    <!--    </div>-->
+    <!--    <hr>-->
     <div class="header">
         <div class="holder">
             <label for="ham" class="toggle-btn">
@@ -49,9 +50,9 @@ include 'common/common.php';
                 <div class="clearfix"></div>
             </a>
 
-            <a class="btn btn-2" href="service.html">服 務</a>
+            <a class="btn btn-2" href="service.php">服 務</a>
             <a class="btn btn-2" href="environment.html">環 境</a>
-            <a class="btn btn-2" href="about.html">商 品 </a>
+            <a class="btn btn-2" href="product.php">商 品 </a>
             <a class="btn btn-2" href="contact.html">聯 絡</a>
         </nav>
         <div id="loginhead" class="loginhead">
@@ -76,7 +77,7 @@ include 'common/common.php';
 
 <!--====banner====-->
 <div class="section">
-    <div id="prlx_lyr_1" class="pic col-xs-12 col-sm-12">
+    <div id="" class="prlx_lyr_1 pic col-xs-12 col-sm-12">
         <div id="content_layer" class="banner">
             <div class="txt shell">
 
@@ -312,31 +313,45 @@ include 'common/common.php';
         </div>
     </div>
 </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"> </script>
-<script type="text/javascript">
-    var navTop = 105px;
-    var scrollbarTop = 0;
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"> </script>-->
 
-    $(window).scroll(
-        function(){
-            scrollbarTop = $(window).scrollTop();
-            if(scrollbarTop >= navTop){
-                $('nav').addClass('fixed');
-            }else{
-                $('nav').removeClass('fixed');
-            }
-        }
-    )
-</script>
+<!--<script>-->
+<!---->
+<!--    $(function() {-->
+<!--        var parallax = document.querySelectorAll(".prlx_lyr_1"),-->
+<!--            speed = -0.5;-->
+<!---->
+<!--        window.onscroll = function(){-->
+<!--            [].slice.call(parallax).forEach(function(el,i){-->
+<!---->
+<!--                var windowYOffset = window.pageYOffset,-->
+<!--                    elBackgrounPos = "50% " + (windowYOffset * speed) + "px";-->
+<!---->
+<!--                el.style.backgroundPosition = elBackgrounPos;-->
+<!---->
+<!--            });-->
+<!--        };-->
+<!--    });-->
+<!---->
+<!---->
+<!--</script>-->
+<!--<script type="text/javascript">-->
+<!--     var navTop = 105;-->
+<!--     var scrollbarTop = 0;-->
+<!---->
+<!--     $(window).scroll(-->
+<!--         function(){-->
+<!--             scrollbarTop = $(window).scrollTop();-->
+<!--             if(scrollbarTop >= navTop){-->
+<!--                 $('nav').addClass('fixed');-->
+<!--             }else{-->
+<!--                 $('nav').removeClass('fixed');-->
+<!--             }-->
+<!--         }-->
+<!--     )-->
+<!--</script>-->
+<!---->
 
-<script>
-    function parallax(){
-        var prlx_lyr_1 = document.getElementById('prlx_lyr_1');
-        prlx_lyr_1.style.top = -(window.PageYOffset / 4)+'px';
-    }
-
-    window.addEventListener("scroll", parallax, false);
-</script>
 
 </body>
 </html>
