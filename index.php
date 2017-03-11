@@ -73,29 +73,33 @@ include 'common/common.php';
             </ul>
         </div>
     </div>
+    <div class="clearfix"></div>
 </div>
+
 
 <!--====banner====-->
 <div class="section">
     <div id="" class="prlx_lyr_1 pic col-xs-12 col-sm-12">
-        <div id="content_layer" class="banner">
-            <div class="txt shell">
+        <div class="text-lg">
+            <div id="content_layer" class="textmid">
+                <div class="textareaBox textcenter">
 
-                <h5 class="bannerTxt">VISIT ONE OF OUR MULTIPLE</h5>
-                <h1 class="shadow">Sessions of Relaxation</h1>
-                <hr class="room">
-                <div class="wrapperGroup">
+                    <h5 class="bannerTxt">VISIT ONE OF OUR MULTIPLE</h5>
+                    <h1 class="shadow">Sessions of Relaxation</h1>
+                    <hr class="room">
+                    <div class="wrapperGroup">
 
-                    <div class="clearfix"></div>
-                    <div class="wrapper">
+                        <div class="clearfix"></div>
+                        <div class="wrapper">
 
-                        <div>
-                            <button class="mainBtn" type="submit" value="SEARCH">BOOK NOW</button>
+                            <div>
+                                <button class="mainBtn" type="submit" value="SEARCH">BOOK NOW</button>
+                            </div>
                         </div>
-                    </div>
 
+                    </div>
+                    <div class="clearfix"></div>
                 </div>
-                <div class="clearfix"></div>
             </div>
         </div>
     </div>
@@ -103,6 +107,8 @@ include 'common/common.php';
 </div>
 
 <!--====title====-->
+
+
 <div class="container">
     <div class="bookingtitle">
         <h5 class="SectionTitle">WELCOME</h5>
@@ -125,8 +131,9 @@ include 'common/common.php';
     <div class="groupBox">
         <div class=" col-sm-6 col-lg-3 p1">
             <div class="picmove">
-                <div class="picholder">
+                <div class="image-hover img-inner-shadow picholder">
                     <img src="assets/images/g1.jpg" alt="">
+                    <div class="layer"></div>
                 </div>
                 <h4 class="Sstitle"><br>Belle 精選</h4>
                 <h2 class="smalltext"><br>悅椿精華系列Spa護理配套，爲您的身、心、靈帶來無限放鬆
@@ -171,7 +178,7 @@ include 'common/common.php';
     </div>
 </div>
 <!--====join us====-->
-<div  class="join">
+<div class="join">
 
     <div class="color col-xs-12 col-sm-6 ">
         <div class=" text-col2 ">
@@ -258,7 +265,7 @@ include 'common/common.php';
     <div class="col-xs-12 col-sm-12">
         <div class="text-lg">
             <div class="textmid">
-                <div class="textarea textcenter">
+                <div class="textareaBox textcenter">
                     <h5>OUR SPECIAL OFFER</h5>
                     <h2 class="Wtitile">頂級禮遇</h2>
                     <p>
@@ -313,8 +320,8 @@ include 'common/common.php';
         </div>
     </div>
 </div>
-<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"> </script>-->
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+s
 <!--<script>-->
 <!---->
 <!--    $(function() {-->

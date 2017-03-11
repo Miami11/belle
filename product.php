@@ -45,9 +45,9 @@ include 'common/common.php';
                 <div class="clearfix"></div>
             </a>
 
-            <a class="btn btn-2" href="service.php" style="color: #c54c82">服 務</a>
+            <a class="btn btn-2" href="service.php" >服 務</a>
             <a class="btn btn-2" href="environment.html">環 境</a>
-            <a class="btn btn-2" href="about.html">商 品 </a>
+            <a class="btn btn-2" href="about.html" style="color: #c54c82">商 品 </a>
             <a class="btn btn-2" href="contact.html">聯 絡</a>
         </nav>
         <div id="loginhead" class="loginhead">
@@ -72,17 +72,18 @@ include 'common/common.php';
             </ul>
         </div>
     </div>
+    <div class="clearfix"></div>
 </div>
 
 <!--====banner====-->
-<div class="serviceSection">
+<div class="productSection">
     <div class="prlx_lyr_1 pic col-xs-12 col-sm-12">
         <div class="text-col1">
             <div id="content_layer" class="textmid">
                 <div class="textarea textcenter">
 
-                    <h5 class="bannerTxt">VISIT ONE OF OUR MULTIPLE</h5>
-                    <h1 class="shadow">Our luxury Service</h1>
+                    <h5 class="bannerTxt">The Best body care</h5>
+                    <h1 class="shadow">Our luxury Product</h1>
                     <div class="textHr">
 
                         <div class="clearfix"></div>
@@ -100,17 +101,50 @@ include 'common/common.php';
     <div class="container">
         <div class="productGroup">
             <div class="col-sm-4 col-xs-12">
-                <div class="product-holder">
-                    <img src="assets/images/product/assets/j1.jpeg" alt="">
 
+                <div class="product-holder">
+                    <a href="buyme.php">
+                    <img src="assets/images/product/b1.jpeg" alt="">
+                    </a>
                 </div>
                 <div class="product-text">
-                    <h3>Body Care</h3>
-                    <h5>$1000</h5>
-                    <button class="xsBtn" type="submit" value="buy">SHOP NOW</button>
+                    <h5>愛魅玫瑰活機淡香氛 </h5>
+                    <h5>Rose Roll-On Fragrance Oil</h5>
+                    <h6>NT$1000</h6>
 
                 </div>
+
             </div>
+            <div class="col-sm-4 col-xs-12">
+                    <div class="product-holder">
+                        <a href="">
+
+                        <img src="assets/images/product/b2.jpeg" alt="">
+                        </a>
+
+                    </div>
+                    <div class="product-text">
+                        <h5>玫瑰沐浴露  </h5>
+                        <h5>Rose Shower Gel </h5>
+                        <h6>NT$950</h6>
+
+                    </div>
+            </div>
+            <div class="col-sm-4 col-xs-12">
+                    <div class="product-holder">
+                        <a href="">
+                        <img src="assets/images/product/b3.jpeg" alt="">
+                        </a>
+
+                    </div>
+                    <div class="product-text">
+                        <h5>柑橘沐浴露 </h5>
+                        <h5>Citrus Shower Gel</h5>
+                        <h6>NT$950</h6>
+
+                    </div>
+            </div>
+
         </div>
     </div>
 </div>
@@ -121,11 +155,10 @@ include 'common/common.php';
     <div class="col-xs-12 col-sm-12">
         <div class="textcenter">
             <h1>More </h1>
-            <h2>General information</h2>
-            <p>Welcome to our Privacy Policy page! When you use our store services, you trust us with your information. This Privacy Policy is meant to help you understand what data we collect, why we collect it, and what we do with it. When you share information with us, we can make our services even better for you. For instance, we can show you more relevant search results and ads, help you connect with people or to make sharing with others quicker and easier. As you use our services, we want you to be clear how we’re using information and the ways in which you can protect your privacy. This is important; we hope you will take time to read it carefully. Remember, you can find controls to manage your information and protect your privacy and security. We’ve tried to keep it as simple as possible.</p>
-
+            <img src="assets/images/product/banner.jpg" alt="">
         </div>
     </div>
+    <div class="clearfix"></div>
 </div>
 
 <!--====footer====-->

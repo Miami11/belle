@@ -108,9 +108,9 @@ include 'common/common.php';
                         <p>
                             在這美麗的國度，有源於世界三地的全新數位手技，搭配針對需求調製的頂級花草精油，讓妳紓解僵硬已久的肌肉，撫癒煩悶的心靈並深度釋放壓力，重回安然、安逸、寧靜與和諧的心境。</p>
                         <br>
-                        <h4><i class="fa fa-plus" aria-hidden="true"></i>120分鐘護理加上30分鐘茶點及靜心時間</h4>
-                        <h3><i class="fa fa-plus" aria-hidden="true"></i>TWD 5,200 + 10% /人</h3>
-                        <button class="xsBtn" type="submit" value="SEARCH">READ MORE</button>
+                        <h4>120分鐘護理加上30分鐘茶點及靜心時間</h4>
+                        <h3>TWD 5,200 + 10% /人</h3>
+<!--                        <button class="xsBtn" type="submit" value="SEARCH">READ MORE</button>-->
                     </div>
                 </div>
             </div>
@@ -129,21 +129,28 @@ include 'common/common.php';
                 <div class="textarea textcenter">
                     <h5>RESERVATION</h5>
                     <h1>線上諮詢系統</h1>
-<!--                    <div class="textHr">-->
                     <div class="room"></div>
                 <table>
                     <form action="">
                         <tr>
-                            <td>    <input type="text" placeholder="Name*"></td>
+                            <td>
+                                <input type="text" placeholder="Name*">
+                            </td>
                         </tr>
                         <tr>
-                            <td>    <input type="text" placeholder="Tele*"></td>
+                            <td>
+                                <input type="text" placeholder="Tele*">
+                            </td>
                         </tr>
                         <tr>
-                            <td>    <input type="text" placeholder="E-mail*"></td>
+                            <td>
+                                <input type="text" placeholder="E-mail*">
+                            </td>
                         </tr>
                         <tr>
-                            <td>    <input type="text" placeholder="Message*"></td>
+                            <td>
+                                <input type="text" placeholder="Message*">
+                            </td>
                         </tr>
                     </form>
                 </table>

@@ -66,7 +66,7 @@ body {
 /*.btn-2:before {*/
   backface-visibility: hidden;
   border: 1px solid #c54c82;
-  bottom: 0px;
+  bottom: 0;
   content: " ";
   display: block;
   margin: auto;
@@ -199,7 +199,7 @@ nav {
   padding: 16px 23px;
   border-radius: 10px;
   transition: .3s;
-  bottom: 0px;
+  bottom: 0;
   cursor: pointer;
 
   /*transform: translateY(50px); }*/
@@ -207,15 +207,15 @@ nav {
 
 .xsBtn{
   display: inline-block;
-  position: absolute;
+  /*position: absolute;*/
   background-color: #c54c82;
   border-color: transparent;
   color: #fff;
   padding: 10px 17px;
   border-radius: 10px;
   transition: .3s;
-  bottom:  0px;
-  left: 260px;
+  bottom:  0;
+  /*left: 260px;*/
   cursor: pointer;
 }
 .mBtn {
@@ -325,17 +325,17 @@ input:focus {
   text-align: center;
   left: 0;
 }
-
+/*Jquery把before擠下去了？*/
 .banner:before {
   content: '';
   display: inline-block;
   height: 100%;
-  width: 0px;
+  width: 0;
   vertical-align: middle;
-  margin-right: -4px; }
+  margin-right: -4px;
+  margin-left: 0;}
 .shadow{
   text-shadow: 1px 1px 2px #64555c;
-
 }
 
 .txt {
@@ -383,6 +383,69 @@ hr {
 .logo {
   float: left;
   vertical-align: bottom; }
+.productinner{
+  font-size: 14px;
+}
+
+div.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: transparent;
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 12px 14px;
+  transition: 0.3s;
+  font-size: 15px;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+div.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.buyme{
+  padding: 100px;
+  margin: auto;
+  display: block;
+  /*background-color: white;*/
+}
+
+.buycolor {
+  background-color: white;
+  /*margin: 10%;*/
+}
+.product-color{
+  color: #757575;
+}
+.textGroup{
+  max-width: 90%;
+  line-height: 40px;
+  padding: 30px;
+}
+
+.textGroup a{
+  color: #c54c82;
+}
 
 /*xs*/
 @media screen and (max-width: 767px) {
@@ -775,7 +838,7 @@ hr {
     top: 8px; }
 
   .toggle-btn .bar2 {
-    top: 0px;
+    top: 0;
     bottom: 0; }
 
   .toggle-btn .bar3 {
@@ -836,6 +899,23 @@ hr {
 
 
 }
+.productSection .pic{
+  background-image: url("../images/product/banner4.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  height: 400px;
+  width: 100%;
+  margin-bottom: 100px;
+
+}
+.product{
+  padding: 12%;
+}
+.product-text{
+  text-align: center;
+}
 
 .wrapperReal .pic {
   background-image: url("../images/banner1.jpg");
@@ -859,9 +939,11 @@ hr {
   z-index: 2;
   opacity: 0;
   left: -10px; }
-
+a{
+  text-decoration: none;
+}
 img {
-  width: 100%;
+  /*width: 100%;*/
   /*filter: brightness(50%); */
 }
 
@@ -929,7 +1011,11 @@ hr {
   margin: 27px auto 34px;
   border: none;
   background-color: #d8a0b7; }
+.product-background{
+  background-image: url("../images/product/buyme.jpg");
+  background-size: cover;
 
+}
 .text-col2{
   color: white;
   margin: auto;
@@ -977,13 +1063,11 @@ hr {
   position: relative;
 }
 .ServiceBook input{
-  /*border: 2px solid transparent;*/
+  display: block;
+  box-sizing: border-box;
   border-radius: 5px;
-  /*padding: 12px 100px;*/
-  /*height: 50px;*/
   font-size: 10px;
   line-height: 25px;
-  /*margin-bottom: 5px;*/
   letter-spacing: 2.4px;
   width: 100%;
   border: 1px solid #ccc;
@@ -1053,6 +1137,42 @@ hr {
   position: relative;
 
 }
+
+/*commom use*/
+
+.textareaBox{
+  width: 100%;
+  position: absolute;
+  height: 400px;
+  text-align: left;
+  left: 0;
+}
+
+.img-inner-shadow .layer {position:absolute;top:0;right:0px;bottom:0px;left:0px}
+
+.img-inner-shadow:hover .layer
+{
+  box-shadow:inset 0 0 120px rgba(0, 0, 0, 0.9);
+
+}
+
+.img-inner-shadow .layer
+{
+  transition:all 0.6s ease-in-out;
+
+}
+
+.img-inner-shadow:hover .layer
+{
+  transition:all 0.6s ease-in-out;
+
+}
+
+
+
+
+
+
 .serviceSection .textmid{
   width: 100%;
   position: absolute;
@@ -1103,8 +1223,19 @@ hr {
   /*position: relative;*/
 }
 .product-holder img{
-  height: 200px;
-  width: 120px;
+  /*width: 100%;*/
+  vertical-align: middle;
+  border: 0;
+  display: block;
+  margin:auto;
+
+}
+.productGroup a{
+  color: black;
+  display: block;
+  margin: auto;
+  width: 160px;
+
 }
 .color{
   background-color: #873459;
