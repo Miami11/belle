@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>index</title>
-    <link rel="stylesheet" href="../assets/css/bootstrap.css">
-
+<!--    <link rel="stylesheet" href="../assets/css/bootstrap.css">-->
+<!---->
     <link rel="stylesheet" href="../assets/css/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
@@ -41,16 +41,16 @@
         <nav>
 
 
-            <a href="#">
-                <div class="logo active">
+            <a href="../index.php">
+                <div class="logo">
                     <img src="../assets/images/belle_logo.png" alt="">
                 </div>
                 <div class="clearfix"></div>
             </a>
             <a class="btn btn-2" href="../service.php">服 務</a>
-            <a class="btn btn-2" href="../environment.html">環 境</a>
+            <a class="btn btn-2" href="../environment.php">環 境</a>
             <a class="btn btn-2" href="../product.php">商 品 </a>
-            <a class="btn btn-2" href="../contact.html">聯 絡</a>
+            <a class="btn btn-2" href="../contact.php">聯 絡</a>
 
         </nav>
         <div id="loginhead" class="loginhead">

@@ -1,6 +1,6 @@
 <?php
 include 'common/common.php';
-include 'common/login_checker.php';
+//include 'common/login_checker.php';
 include 'view/header.php';
 
 //取得商品資料
@@ -30,14 +30,12 @@ while ($row = mysqli_fetch_array($result)) {
                     <h1 class="shadow">Our luxury Product</h1>
                     <div class="textHr">
 
-                        <div class="clearfix"></div>
                     </div>
                 </div>
             </div>
-
         </div>
-
     </div>
+    <div class="clearfix"></div>
 </div>
 
 <!--====product====-->
@@ -46,24 +44,22 @@ while ($row = mysqli_fetch_array($result)) {
         <div class="productGroup">
 
             <?php
-            foreach ($products as $item)
-            {
+            foreach ($products as $item) {
                 echo "<div class='col-sm-4 col-xs-12'>";
                 echo "<div class='product-holder'>";
-                echo "<a href='buyme.php?product_id=".$item['product_id']."'>";
-                echo "<img src='assets/images/product/".$item['image'].".jpeg' alt=''>";
+                echo "<a href='buyme.php?product_id=" . $item['product_id'] . "'>";
+                echo "<img src='assets/images/product/" . $item['image'] . ".jpeg' alt=''>";
                 echo "</a>";
                 echo "</div>";
                 echo "<div class='product-text'>";
-                echo "<h5>".$item['name_ch']."</h5>";
-                echo "<h5>".$item['name_en']."</h5>";
-                echo "<h6>NT$".$item['price']."</h6>";
+                echo "<h5>" . $item['name_ch'] . "</h5>";
+                echo "<h5>" . $item['name_en'] . "</h5>";
+                echo "<h6>NT$" . $item['price'] . "</h6>";
                 echo "</div>";
                 echo "</div>";
             }
 
             ?>
-
 
 
         </div>

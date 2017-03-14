@@ -31,37 +31,37 @@ include 'view/header.php';
 
 </div>
 
-<!--====title====-->
-
-
-<div class="container">
-    <div class="bookingtitle">
-        <h5 class="SectionTitle">WELCOME</h5>
-        <h2 class="Btitle">極致舒緩</h2>
-
-        <div class="smalltext bookingSize">
-            <br> Belle Spa 於泰國普吉島、印尼、馬爾地夫等度假聖地等高級飯店均設有分店，以其悅椿學院之細膩按摩技法，享譽全球。
-        </div>
-
-        <div class="textHr"></div>
-    </div>
-</div>
 
 
 <!--====house====-->
 
 <div class="section2">
 
+    <div class="container">
+        <div class="bookingtitle">
+            <h5 class="SectionTitle">WELCOME</h5>
+            <h2 class="Btitle">極致舒緩</h2>
+
+            <div class="smalltext bookingSize">
+                <br> 全台首賣的稀有課程，使用巧克力原料、緊緻度絕佳的GoldenTouch緊顏課程，喜愛紓壓療癒者所推出的皇家能量精油按摩課程系列等，有如身在紐約Loft中、充滿藝文氣息的優雅空間，不定期展示潛力新秀的藝術作品。
+            </div>
+
+            <div class="textHr"></div>
+        </div>
+    </div>
+
 
     <div class="groupBox">
         <div class=" col-sm-6 col-lg-3 p1">
             <div class="picmove">
-                <div class="image-hover img-inner-shadow picholder">
+                <div class="img-inner-shadow picholder">
                     <img src="assets/images/g1.jpg" alt="">
                     <div class="layer"></div>
                 </div>
-                <h4 class="Sstitle"><br>Belle 精選</h4>
-                <h2 class="smalltext"><br>悅椿精華系列Spa護理配套，爲您的身、心、靈帶來無限放鬆
+                <div class="text-section2">
+                    <h4 class="Sstitle"><br>Belle 面膜</h4>
+                    <h2 class="smalltext"><br>針對個人不同的需求深層保養，以專業保養品搭配獨特手技，滋潤肌底，提高肌膚保濕含水度、使臉部肌膚更加透亮水嫩。 </h2>
+                </div>
 
             </div>
         </div>
@@ -70,8 +70,8 @@ include 'view/header.php';
                 <div class="picholder">
                     <img src="assets/images/g2.jpg" alt="">
                 </div>
-                <h4 class="Sstitle"><br>Belle 精選</h4>
-                <h2 class="smalltext"><br>悅椿精華系列Spa護理配套，爲您的身、心、靈帶來無限放鬆
+                <h4 class="Sstitle"><br>Belle 塗料</h4>
+                <h2 class="smalltext"><br>選擇適合肌質與需求的香氛巧克力豆原料，進入一場愉悅身心的芳香療程，讓心靈與精神獲得放鬆，達到純淨美好狀態。</h2>
 
 
             </div>
@@ -81,8 +81,8 @@ include 'view/header.php';
                 <div class="picholder">
                     <img src="assets/images/g3.jpg" alt="">
                 </div>
-                <h4 class="Sstitle"><br>Belle 精選</h4>
-                <h2 class="smalltext"><br>悅椿精華系列Spa護理配套，爲您的身、心、靈帶來無限放鬆
+                <h4 class="Sstitle"><br>Belle 按摩</h4>
+                <h2 class="smalltext"><br>經典的放鬆課程，藉由專業的手技深層按摩釋放壓力，並能同時舒緩僵硬酸痛的部位。讓身心靈全面放鬆舒緩，擁有煥然一新的舒適感受。</h2>
 
 
             </div>
@@ -93,9 +93,10 @@ include 'view/header.php';
                     <img src="assets/images/g4.jpg" alt="">
                 </div>
 
-                <h4 class="Sstitle"><br>Belle 精選</h4>
-                <h2 class="smalltext"><br>悅椿精華系列Spa護理配套，爲您的身、心、靈帶來無限放鬆
+                <h4 class="Sstitle"><br>Belle 產品</h4>
+                <h2 class="smalltext"><br>平滑緊緻 抗老修護
 
+                    緊緻、柔軟平滑肌膚，同時改善肌膚受外在環境刺激引發的不適感，延緩老化。</h2>
 
             </div>
         </div>

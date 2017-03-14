@@ -78,7 +78,9 @@
 <!--     )-->
 <!--</script>-->
 <!---->
-<script src="../assets/js/bootstrap.min.js"></script>
+
+<!--JS 把before擠下去-->
+<!--<script src="../assets/js/bootstrap.min.js"></script>-->
 
 
 </body>

@@ -336,6 +336,15 @@ input:focus {
   margin-left: 0;}
 .shadow{
   text-shadow: 1px 1px 2px #64555c;
+  color: white;
+  font-size: 40px;
+
+}
+.addmem{
+  margin: auto;
+  text-align: left;
+  padding: 10px;
+  width: 60%;
 }
 
 .txt {
@@ -450,6 +459,18 @@ div.tab button.active {
   color: #c54c82;
 }
 
+.contacts i{
+
+  padding: 10px;
+  display: block;
+  line-height: 2.2;
+}
+
+.map img{
+  display: block;
+  margin: auto;
+  padding: 100px 0;
+}
 /*xs*/
 @media screen and (max-width: 767px) {
   .col-xs-1 {
@@ -705,6 +726,8 @@ div.tab button.active {
     padding-left: 10px;
     padding-right: 10px;
     box-sizing: border-box; } }
+
+
 /* cell phone */
 @media screen and (max-width: 767px) {
   .container {
@@ -726,8 +749,10 @@ div.tab button.active {
 
   .logo {
     text-align: center;
-    background-color: white;
-    width: auto; }
+    /*background-color: white;*/
+    width: auto;
+    z-index: 2;
+  }
 
   .top {
     display: none; }
@@ -750,7 +775,8 @@ div.tab button.active {
   /*}*/
   nav {
     width: 80%;
-    min-height: 88%;
+    /*min-height: 88%;*/
+    height: calc(100vh - 56px);
     position: fixed;
     z-index: 9;
     left: -100%;
@@ -763,26 +789,30 @@ div.tab button.active {
     padding: 10px 15px;
     max-width: 260px;
     margin: 5px auto; }
+  .section{
+    margin-top: 56px;
 
+  }
   .logo {
-    margin: auto; }
+    margin: auto;
+  }
 
   .header nav a:nth-child(1) {
     display: block;
-    background-color: white; }
+    background-color: transparent; }
 
   .header nav a:nth-child(2) {
-    background-color: #c54c82;
-    color: white; }
+    background-color: black;
+    color: #343434; }
 
-  .header nav a:nth-child(3):hover,
-  .header nav a:nth-child(4):hover,
-  .header nav a:nth-child(5):hover,
-  .header nav a:nth-child(6):hover,
-  .header nav a:nth-child(7):hover {
-    background-color: #c54c82;
-    color: white;
-    transition: .3s; }
+  /*.header nav a:nth-child(3):hover,*/
+  /*.header nav a:nth-child(4):hover,*/
+  /*.header nav a:nth-child(5):hover,*/
+  /*.header nav a:nth-child(6):hover,*/
+  /*.header nav a:nth-child(7):hover {*/
+    /*background-color: #c54c82;*/
+    /*color: white;*/
+    /*transition: .3s; }*/
 
   .toggle-btn {
     z-index: 17;
@@ -809,13 +839,13 @@ div.tab button.active {
     left: 0; }
 
   #ham:checked ~ .header .toggle-btn .bar1 {
-    transform: translateY(0) rotate3d(0, 0, 1, 45deg); }
+    transform: translateY(0) rotateZ(45deg); }
 
   #ham:checked ~ .header .toggle-btn .bar2 {
-    opacity: 1; }
+    opacity: 0; }
 
   #ham:checked ~ .header .toggle-btn .bar3 {
-    transform: translateY(0) rotate3d(0, 0, 1, -45deg); }
+    transform: translateY(0) rotateZ(-225deg); }
 
   .toggle-btn .bar1 {
     transform: translateY(-10px) rotateZ(0deg); }
@@ -827,7 +857,7 @@ div.tab button.active {
     display: block;
     width: 24px;
     height: 4px;
-    background-color: #c54c82;
+    background-color: #343434;
     margin: auto;
     position: absolute;
     left: 0;
@@ -885,8 +915,6 @@ div.tab button.active {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
-  height: 600px;
-  width: 100%;
   margin-bottom: 100px;
 }
 .serviceSection .pic {
@@ -955,16 +983,24 @@ img {
   margin: auto; }
 
 .picmove {
-  position: relative;
+  display: inline-block;
   text-align: center;
   padding-bottom: 100px;
-  display: inline-block;
   /*overflow: hidden;*/
   max-height: 500px;
   margin: 15px 10px; }
 
-
-
+.picmove img{
+  z-index: 10;
+  width: 100%;
+  position: relative;
+}
+.text-section2{
+  display: block;
+  margin: auto;
+  text-align: center;
+  width: 95%;
+}
 .Sstitle {
   color: #555555;
   font-size: 20px;
@@ -975,13 +1011,15 @@ img {
   position: absolute;
   right: 0;
   left: 0;
+  font-size: 30px;
 }
 
 .smalltext {
   font-size: 15px;
-  color: #a79a9a;
+  color: #757575;
   padding-bottom: 20px;
-  width: 95%;
+  width: 100%;
+  text-align: center;
   /*text-align: left;*/
 
 }
@@ -1021,7 +1059,7 @@ hr {
 }
 
 .login-background{
-  background-image: url("../images/branch/bannerlog.jpg");
+  background-image: url("../images/branch/login2.jpg");
   background-size: cover;
   /*height: 1200px;*/
   padding: 100px ;
@@ -1090,15 +1128,15 @@ hr {
   text-align: center;
   padding: 8px;
   margin: auto;
-  /*border: 1px solid green;*/
+  border: none;
 }
 .footer{
-  margin-bottom: 100px;
   color: #757575;
   text-align: center;
   max-height: 250px;
   overflow: hidden;
   line-height: 30px;
+  padding-bottom: 100px;
 }
 
 .icon {
@@ -1152,14 +1190,20 @@ hr {
 /*commom use*/
 
 .textareaBox{
-  width: 100%;
-  position: absolute;
-  height: 400px;
-  text-align: left;
-  left: 0;
+  /*width: 100%;*/
+  display: inline-block;
+  /*position: absolute;*/
+  /*height: 400px;*/
+  vertical-align: middle;
 }
 
-.img-inner-shadow .layer {position:absolute;top:0;right:0px;bottom:0px;left:0px}
+.img-inner-shadow .layer {
+  position:absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+}
 
 .img-inner-shadow:hover .layer
 {
@@ -1178,10 +1222,22 @@ hr {
   transition:all 0.6s ease-in-out;
 
 }
+.section .text-lg{
+  width: 100%;
+  /*height: 0;*/
+  /*padding-bottom: 37%;*/
+  height: 50vh;
+  margin: auto;
+  position: relative;
+  text-align: center;
+}
 
 
-
-
+.section .textmid{
+  width: 100%;
+  position: absolute;
+  height: 100%;
+}
 
 
 .serviceSection .textmid{
@@ -1190,6 +1246,7 @@ hr {
   height: 400px;
   text-align: left;
   left: 0;
+  font-size: 0;
 }
 
 .serviceSection .textarea{
@@ -1217,7 +1274,7 @@ hr {
   vertical-align: middle;
   height: 100%;
   width: 0;
-  margin-right: -4px;
+  /*margin-right: -4px;*/
 
 }
 .join .textarea{
@@ -1345,6 +1402,8 @@ li i {
   border-radius: 5px;
   text-align: center;
   display: inline-block;
+  position: relative;
+
 }
 
 

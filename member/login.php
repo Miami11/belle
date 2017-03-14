@@ -55,6 +55,7 @@ include '../view/header.php';
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
+                <a href="addmemb.php">點我加入會員</a>
             </div>
         </div>
     </div>
