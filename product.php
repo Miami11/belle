@@ -27,7 +27,7 @@ while ($row = mysqli_fetch_array($result)) {
                 <div class="textarea textcenter">
 
                     <h5 class="bannerTxt">The Best body care</h5>
-                    <h1 class="shadow">Our luxury Product</h1>
+                    <h1 class="bannerTxt2">Luxury Product</h1>
                     <div class="textHr">
 
                     </div>
@@ -69,12 +69,14 @@ while ($row = mysqli_fetch_array($result)) {
 <!--====more====-->
 
 <div class="more">
-    <div class="col-xs-12 col-sm-12">
-        <div class="textcenter">
-            <h1>More </h1>
-            <img src="assets/images/product/banner.jpg" alt="">
+    <div class="container">
+        <div class="col-xs-12 col-sm-12">
+            <div class="textcenter">
+                <img src="assets/images/product/banner.jpg" alt="">
+            </div>
         </div>
     </div>
+
     <div class="clearfix"></div>
 </div>
 

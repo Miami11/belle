@@ -1,13 +1,7 @@
 <?php
 include '../common/common.php';
-include '../common/login_checker.php';
-
-
 include '../view/header.php';
-
 ?>
-<!--====member====-->
-
 <div class="mempage">
     <div class="container">
         <div class="col-xs-12 col-sm-12">
@@ -15,7 +9,7 @@ include '../view/header.php';
                 <div class="textmid textcenter">
 
                     <p>歡迎來到 <?= $_SESSION['name'] ?> 會員頁面</p>
-                        <div class="room"></div>
+                    <div class="room"></div>
                     <table class="buyframe">
                         <tr>
                             <th>商品名稱</th>
@@ -48,6 +42,5 @@ include '../view/header.php';
 </div>
 
 
-<!--====buy====-->
 
 <?php include '../view/footer.php'; ?>

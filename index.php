@@ -9,8 +9,8 @@ include 'view/header.php';
             <div id="content_layer" class="textmid">
                 <div class="textareaBox textcenter">
 
-                    <h5 class="bannerTxt">VISIT ONE OF OUR MULTIPLE</h5>
-                    <h1 class="shadow">Sessions of Relaxation</h1>
+                    <h5 class="bannerTxt animated fadeInUp">VISIT ONE OF OUR MULTIPLE</h5>
+                    <h1 class="bannerTxt2 animated fadeInUp">Sessions of Relaxation</h1>
                     <hr class="room">
                     <div class="wrapperGroup">
 
@@ -18,7 +18,7 @@ include 'view/header.php';
                         <div class="wrapper">
 
                             <div>
-                                <button class="mainBtn" type="submit" value="SEARCH">BOOK NOW</button>
+                                <button class="mainBtn animated fadeInUp" type="submit" value="SEARCH">BOOK NOW</button>
                             </div>
                         </div>
 
@@ -32,7 +32,6 @@ include 'view/header.php';
 </div>
 
 
-
 <!--====house====-->
 
 <div class="section2">
@@ -42,8 +41,9 @@ include 'view/header.php';
             <h5 class="SectionTitle">WELCOME</h5>
             <h2 class="Btitle">極致舒緩</h2>
 
-            <div class="smalltext bookingSize">
-                <br> 全台首賣的稀有課程，使用巧克力原料、緊緻度絕佳的GoldenTouch緊顏課程，喜愛紓壓療癒者所推出的皇家能量精油按摩課程系列等，有如身在紐約Loft中、充滿藝文氣息的優雅空間，不定期展示潛力新秀的藝術作品。
+            <div class="smalltext">
+                <br>
+                全台首賣的稀有課程，使用巧克力原料、緊緻度絕佳的GoldenTouch緊顏課程，喜愛紓壓療癒者所推出的皇家能量精油按摩課程系列等，有如身在紐約Loft中、充滿藝文氣息的優雅空間，不定期展示潛力新秀的藝術作品。
             </div>
 
             <div class="textHr"></div>
@@ -51,12 +51,11 @@ include 'view/header.php';
     </div>
 
 
-    <div class="groupBox">
+    <div id="introduce" class="groupBox">
         <div class=" col-sm-6 col-lg-3 p1">
             <div class="picmove">
-                <div class="img-inner-shadow picholder">
+                <div id="introduce_item_0" class="hover picholder">
                     <img src="assets/images/g1.jpg" alt="">
-                    <div class="layer"></div>
                 </div>
                 <div class="text-section2">
                     <h4 class="Sstitle"><br>Belle 面膜</h4>
@@ -65,38 +64,45 @@ include 'view/header.php';
 
             </div>
         </div>
+
         <div class=" col-sm-6 col-lg-3 p2">
             <div class="picmove">
-                <div class="picholder">
+                <div id="introduce_item_1" class="hover picholder">
                     <img src="assets/images/g2.jpg" alt="">
                 </div>
-                <h4 class="Sstitle"><br>Belle 塗料</h4>
-                <h2 class="smalltext"><br>選擇適合肌質與需求的香氛巧克力豆原料，進入一場愉悅身心的芳香療程，讓心靈與精神獲得放鬆，達到純淨美好狀態。</h2>
+                <div class="text-section2">
+                    <h4 class="Sstitle"><br>Belle 塗料</h4>
+                    <h2 class="smalltext"><br>選擇適合肌質與需求的香氛巧克力豆原料，進入一場愉悅身心的芳香療程，讓心靈與精神獲得放鬆，達到純淨美好狀態。</h2>
+                </div>
 
 
             </div>
         </div>
         <div class=" col-sm-6 col-lg-3 p3">
             <div class="picmove">
-                <div class="picholder">
+                <div id="introduce_item_2" class="hover picholder">
                     <img src="assets/images/g3.jpg" alt="">
                 </div>
-                <h4 class="Sstitle"><br>Belle 按摩</h4>
-                <h2 class="smalltext"><br>經典的放鬆課程，藉由專業的手技深層按摩釋放壓力，並能同時舒緩僵硬酸痛的部位。讓身心靈全面放鬆舒緩，擁有煥然一新的舒適感受。</h2>
+                <div class="text-section2">
+                    <h4 class="Sstitle"><br>Belle 按摩</h4>
+                    <h2 class="smalltext"><br>經典的放鬆課程，藉由專業的手技深層按摩釋放壓力，並能同時舒緩僵硬酸痛的部位。讓身心靈全面放鬆舒緩，擁有煥然一新的舒適感受。</h2>
+
+                </div>
 
 
             </div>
         </div>
         <div class=" col-sm-6 col-lg-3 p4">
             <div class="picmove">
-                <div class="picholder">
+                <div id="introduce_item_3" class="hover picholder">
                     <img src="assets/images/g4.jpg" alt="">
                 </div>
+                <div class="text-section2">
+                    <h4 class="Sstitle"><br>Belle 產品</h4>
+                    <h2 class="smalltext"><br>平滑緊緻 抗老修護
+                        緊緻、柔軟平滑肌膚，同時改善肌膚受外在環境刺激引發的不適感，延緩老化。</h2>
+                </div>
 
-                <h4 class="Sstitle"><br>Belle 產品</h4>
-                <h2 class="smalltext"><br>平滑緊緻 抗老修護
-
-                    緊緻、柔軟平滑肌膚，同時改善肌膚受外在環境刺激引發的不適感，延緩老化。</h2>
 
             </div>
         </div>
@@ -148,10 +154,10 @@ include 'view/header.php';
                 <div class="col-lg-4 col-sm-4 col-xs-12 ">
 
 
-                    <div class="pixFrame2"><img class="pplimg" src="assets/images/expertgigi.jpg">
+                    <div class="pixFrame2"><img class="pplimg" src="assets/images/expertgigi.jpeg">
                     </div>
                     <div class="tableGroup">
-                        <h4 class="Sstitle"><br>Sera<span class="xstext">/學院長</span></h4>
+                        <h4 class="Sstitle"><br>Max<span class="xstext">/學院長</span></h4>
                         <h5 class="smalltext"><br>作爲亞洲領先的Spa運營商以及熱帶花園Spa概念的先鋒，Belle學院特別重視護療師的培訓及發展。
 
                         </h5>
@@ -195,8 +201,8 @@ include 'view/header.php';
                     <h5>OUR SPECIAL OFFER</h5>
                     <h2 class="Wtitile">頂級禮遇</h2>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque doloremque doloribus dolorum
-                        magnam provident saepe veniam. Aliquam deleniti molestias neque.
+                        尊重肌膚的機能並將變美麗的成份傳遞至所需的地方，自然喚醒肌膚本身原生的美麗。
+                        不僅是現在，對於以後的肌膚狀態也是小心翼翼地呵謢，讓您的美麗綿延不絕
 
                     </p>
                 </div>
@@ -205,3 +211,59 @@ include 'view/header.php';
     </div>
 </div>
 <?php include 'view/footer.php'; ?>
+<script>
+
+    //    new Waypoint({
+    //        element: document.getElementById('element-waypoint'),
+    //        handler: function (direction) {
+    //            //notify(this.element.id + ' triggers at ' + this.triggerPoint)
+    //            var item = document.getElementById("SBtn");
+    //            item.className += " animated";
+    //            item.className += " fadeInUp";
+    //
+    //        },
+    //        offset: '75%'
+    //    })
+
+    //    new Waypoint({
+    //        element: document.getElementById('introduce'),
+    //        handler: function (direction) {
+    //
+    //            var obj = document.getElementById('introduce');
+    //            obj.style.opacity = 1;
+    //            var item_array = [];
+    //            item_array.push(document.getElementById("introduce_item_0"));
+    //            item_array.push(document.getElementById("introduce_item_1"));
+    //            item_array.push(document.getElementById("introduce_item_2"));
+    //
+    //            for (var num in item_array) {
+    //                item_array[num].className += " animated";
+    //                item_array[num].className += " fadeInUp";
+    //            }
+    //
+    //        },
+    //        offset: '75%'
+    //    })
+
+
+    //    new Waypoint({
+    //        element: document.getElementById('expert'),
+    //        handler: function (direction) {
+    //
+    //            var obj = document.getElementById('expert');
+    //            obj.style.opacity = 1;
+    //            var item_array = [];
+    //            item_array.push(document.getElementById("expert_item_0"));
+    //            item_array.push(document.getElementById("expert_item_1"));
+    //            item_array.push(document.getElementById("expert_item_2"));
+    //
+    //            for (var num in item_array) {
+    //                item_array[num].className += " animated";
+    //                item_array[num].className += " fadeInUp";
+    //            }
+    //
+    //        },
+    //        offset: '75%'
+    //    })
+
+</script>

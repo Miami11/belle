@@ -40,47 +40,65 @@
         </div>
     </div>
 </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/owl.carousel.min.js"></script>
 
-<!--<script>-->
-<!---->
-<!--    $(function() {-->
-<!--        var parallax = document.querySelectorAll(".prlx_lyr_1"),-->
-<!--            speed = -0.5;-->
-<!---->
-<!--        window.onscroll = function(){-->
-<!--            [].slice.call(parallax).forEach(function(el,i){-->
-<!---->
-<!--                var windowYOffset = window.pageYOffset,-->
-<!--                    elBackgrounPos = "50% " + (windowYOffset * speed) + "px";-->
-<!---->
-<!--                el.style.backgroundPosition = elBackgrounPos;-->
-<!---->
-<!--            });-->
-<!--        };-->
-<!--    });-->
-<!---->
-<!---->
-<!--</script>-->
+<script>
+    $(function () {
+        var owl = $('.owl-carousel');
+        owl.owlCarousel({
+            items: 4,
+            loop: true,
+            margin: 10,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            autoplayHoverPause: true
+        });
+        $('.play').on('click', function () {
+            owl.trigger('play.owl.autoplay', [800])
+        })
+        $('.stop').on('click', function () {
+            owl.trigger('stop.owl.autoplay')
+        })
+    });
+</script>
+<script>
+
+    $(function() {
+        var parallax = document.querySelectorAll(".prlx_lyr_1"),
+            speed = -0.5;
+
+        window.onscroll = function(){
+            [].slice.call(parallax).forEach(function(el,i){
+
+                var windowYOffset = window.pageYOffset,
+                    elBackgrounPos = "50% " + (windowYOffset * speed) + "px";
+
+                el.style.backgroundPosition = elBackgrounPos;
+
+            });
+        };
+    });
+
+
+</script>
 <!--<script type="text/javascript">-->
-<!--     var navTop = 105;-->
+<!--     var navTop = 140;-->
 <!--     var scrollbarTop = 0;-->
 <!---->
 <!--     $(window).scroll(-->
 <!--         function(){-->
 <!--             scrollbarTop = $(window).scrollTop();-->
 <!--             if(scrollbarTop >= navTop){-->
-<!--                 $('nav').addClass('fixed');-->
+<!--                 $('.header').addClass('fixed');-->
 <!--             }else{-->
-<!--                 $('nav').removeClass('fixed');-->
+<!--                 $('.header').removeClass('fixed');-->
 <!--             }-->
 <!--         }-->
 <!--     )-->
 <!--</script>-->
-<!---->
 
-<!--JS 把before擠下去-->
-<!--<script src="../assets/js/bootstrap.min.js"></script>-->
+
 
 
 </body>

@@ -16,15 +16,15 @@ include '../view/header.php';
 
                         <h2>申請加入會員</h2>
                         <div class="room"></div>
-                        <form action="index.php">
-                            <table id="myForm" class="addmem">
+                        <form id="myForm" action="index.php">
+                            <table class="addmem">
                                 <tr>
-                                    <th class="titleColor">帳號 <span class="hint">(最少不能低於6)</span></th>
+                                    <th class="titleColor">帳號 <span class="xstext"><br>(最少不能低於6)</span></th>
                                     <td><input type="text" name="memId" id="memId" maxlength="10" size="12"></td>
                                 </tr>
 
                                 <tr>
-                                    <th class="titleColor">密碼 <span class="hint">(密碼請含數字、英文)</span></th>
+                                    <th class="titleColor">密碼 <span class="xstext"><br>(密碼請含數字、英文)</span></th>
                                     <td><input type="password" name="memPsw" id="memPsw" maxlength="10" size="12"></td>
                                 </tr>
                                 <tr>

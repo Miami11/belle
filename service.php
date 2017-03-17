@@ -11,7 +11,7 @@ include 'view/header.php';
                 <div class="textarea textcenter">
 
                     <h5 class="bannerTxt">VISIT ONE OF OUR MULTIPLE</h5>
-                    <h1 class="shadow">Our luxury Service</h1>
+                    <h1 class="bannerTxt2">Our luxury Service</h1>
                     <div class="textHr">
 
                     </div>
