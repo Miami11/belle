@@ -6,8 +6,9 @@ session_start();
 
 //資料庫連線
 $con = mysqli_connect("localhost", "root", "fzwV9d4G", "belle");
-
 if (mysqli_connect_errno()) {
     echo "Failed to connect to MySQL: " . mysqli_connect_error();
     die();
 }
+mysqli_set_charset($con,"utf8");
+
