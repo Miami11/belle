@@ -1,6 +1,7 @@
 <?php
 include '../common/common.php';
 include '../view/header.php';
+
 ?>
 <div class="mempage">
     <div class="container">

@@ -18,6 +18,9 @@ while ($row = mysqli_fetch_array($result)) {
     $products[] = $row;
 }
 
+
+
+
 ?>
 <!--====banner====-->
 <div class="productSection">

@@ -173,12 +173,7 @@ a:hover {
     display: none;
     opacity: 1;
 }
-.loginhead {
-    float: right;
-    right: 0;
-    bottom: 20px;
-    position: absolute;
-}
+
 .loginContent{
     height: 50vh;
 }
@@ -225,7 +220,7 @@ nav {
 
 .sBtn {
     display: inline-block;
-    position: absolute;
+    /*position: absolute;*/
     background-color: #c54c82;
     /*border-color: #b44577;*/
     color: #fff;
@@ -946,7 +941,7 @@ div.tab button.active {
     nav {
         width: 80%;
         /*min-height: 88%;*/
-        height: calc(100vh - 70px);
+        height: calc(100vh - 68px);
         position: fixed;
         z-index: 9;
         left: -100%;
@@ -1088,8 +1083,11 @@ div.tab button.active {
         padding-top: 300px;
 
     }
-    .padding{
-        padding-bottom: 200px;
+    .padding_5{
+        padding-bottom: 500px;
+    }
+    .groupBox{
+        margin: 0 -10px;
     }
     /*.panel-toggle .point1 {*/
     /*top: 8px;*/
@@ -1101,12 +1099,39 @@ div.tab button.active {
     /*.panel-toggle .point3 {*/
     /*bottom: 8px;*/
     /*}*/
+    .text-col2 {
+        color: white;
+        margin: auto;
+        text-align: left;
+        max-width: 80%;
+        position: relative;
+
+    }
+    .loginhead {
+        /*float: right;*/
+        right: 0;
+        top: 0;
+        margin: 20px 0;
+        position: fixed;
+        z-index: 30;
+    }
+    .fixed-nav{
+        display: none;
+    }
+
 }
 
 /* tablet */
 
 
 @media screen and (min-width: 768px) {
+    .loginhead {
+        float: right;
+        right: 0;
+        top: 30px;
+        position: absolute;
+        font-size: 30px;
+    }
     .equip2 {
         text-align: center;
         margin: auto;
@@ -1166,8 +1191,22 @@ div.tab button.active {
         width: 70%;
 
     }
+    .text-col2 {
+        color: white;
+        margin: auto;
+        text-align: left;
+        max-width: 60%;
+        position: relative;
+
+    }
 }
 
+.shipCart{
+    vertical-align: text-bottom;
+}
+.margin_1{
+    margin: 10px 0;
+}
 /*span:after {*/
 /*position: absolute;*/
 /*top: 0;*/
@@ -1360,14 +1399,7 @@ hr {
 
 }
 
-.text-col2 {
-    color: white;
-    margin: auto;
-    text-align: left;
-    width: 60%;
-    position: relative;
 
-}
 
 .introduce i {
     font-size: 50px;
@@ -1732,8 +1764,7 @@ hr {
 .color {
     background-color: #873459;
     height: 60vh;
-    box-sizing: content-box;
-    padding-bottom: 100px;
+
 }
 
 .mia {
@@ -1747,9 +1778,7 @@ hr {
 
 .color2 {
     background-color: #ffffff;
-    height: 40vh;
-    box-sizing: content-box;
-    padding-bottom: 100px;
+    height: 40v
 }
 
 .env-mia {
@@ -1876,7 +1905,7 @@ li i {
 
 .picholder {
     height: 240px;
-    width: 320px;
+    max-width: 320px;
     overflow: hidden;
     border-radius: 5px;
     text-align: center;

@@ -83,10 +83,12 @@ if(document.getElementById("defaultOpen"))
 
 var navTop = 140;
 var scrollbarTop = 0;
+
 $(window).scroll(
     function () {
         scrollbarTop = $(window).scrollTop();
-        if (scrollbarTop > navTop) {
+
+        if (scrollbarTop > navTop && $(window).width() > 768) {
 
             // $('.onTop').css('display','none');
             $('.fixed-nav').css('display','block');
@@ -105,7 +107,7 @@ new Waypoint({
         //notify(this.element.id + ' triggers at ' + this.triggerPoint)
         var item = document.getElementById("sBtn");
         item.className += " animated";
-        item.className += " zoomIn";
+        item.className += " fadeIn";
 
     },
     offset: '75%'
@@ -122,10 +124,12 @@ new Waypoint({
         item_array.push(document.getElementById("introduce_item_0"));
         item_array.push(document.getElementById("introduce_item_1"));
         item_array.push(document.getElementById("introduce_item_2"));
+        item_array.push(document.getElementById("introduce_item_3"));
+
 
         for (var num in item_array) {
             item_array[num].className += " animated";
-            item_array[num].className += " fadeInUp";
+            item_array[num].className += " fadeIn";
         }
 
     },

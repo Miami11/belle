@@ -38,6 +38,7 @@
 
             </label>
         </div>
+
         <nav id="main_nav">
             <a href="../index.php">
                 <div class="logo">
@@ -50,20 +51,21 @@
             <a class="btn btn-2" href="../product.php">商 品 </a>
             <a class="btn btn-2" href="../contact.php">聯 絡</a>
         </nav>
+
         <div id="loginhead" class="loginhead">
             <ul>
                 <?php
-                    if (isset($_SESSION['name'])) {
-                        echo '<li><a class="login" href="#">' . $_SESSION['name'] . '會員您好</a></li>';
-                        echo '<li><a href="../member/logout.php">登出</a></li>';
-                    } else {
-                        echo '<li><a class="login" href="../member/login.php">會員登入</a></li>';
-                    }
+                if (isset($_SESSION['name'])) {
+                    echo '<li><a class="login" href="#">' . $_SESSION['name'] . '會員您好</a></li>';
+                    echo '<li><a href="../member/logout.php">登出</a></li>';
+                } else {
+                    echo '<li><a class="login" href="../member/login.php"><i class="fa fa-user" aria-hidden="true"></i>會員登入</a></li>';
+                }
                 ?>
-                <li><a class="login" href="../member/">購物車</a></li>
-                <li><a class="login" href="info.html">訂閱電子報</a></li>
+                <li><a class="login" href="../member/"><img class="shipCart" src="../assets/images/icons/ShoppingCart.gif" alt="">購物車</a></li>
             </ul>
         </div>
+
     </div>
     <div class="fixed-nav header">
         <div class="holder">
