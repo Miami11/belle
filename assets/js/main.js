@@ -45,6 +45,19 @@ $(function () {
 
         });
     };
+
+    //加入子nav的內容
+    if($("#loginhead"))
+    {
+        var nav = $("#loginhead");
+        $("#loginhead_child").append(nav.html());
+    }
+    //nav
+    if($("#main_nav")){
+
+        var main_nav = $("#main_nav");
+        $("#main_nav_child").append(main_nav.html());
+    }
 });
 
 function openCity(evt, cityName) {
@@ -84,3 +97,60 @@ $(window).scroll(
         }
     }
 );
+
+
+new Waypoint({
+    element: document.getElementById('element-waypoint'),
+    handler: function (direction) {
+        //notify(this.element.id + ' triggers at ' + this.triggerPoint)
+        var item = document.getElementById("sBtn");
+        item.className += " animated";
+        item.className += " zoomIn";
+
+    },
+    offset: '75%'
+});
+
+
+new Waypoint({
+    element: document.getElementById('introduce'),
+    handler: function (direction) {
+
+        var obj = document.getElementById('introduce');
+        obj.style.opacity = 1;
+        var item_array = [];
+        item_array.push(document.getElementById("introduce_item_0"));
+        item_array.push(document.getElementById("introduce_item_1"));
+        item_array.push(document.getElementById("introduce_item_2"));
+
+        for (var num in item_array) {
+            item_array[num].className += " animated";
+            item_array[num].className += " fadeInUp";
+        }
+
+    },
+    offset: '75%'
+});
+
+
+
+
+// new Waypoint({
+//     element: document.getElementById('expert'),
+//     handler: function (direction) {
+//
+//         var obj = document.getElementById('expert');
+//         obj.style.opacity = 1;
+//         var item_array = [];
+//         item_array.push(document.getElementById("expert_item_0"));
+//         item_array.push(document.getElementById("expert_item_1"));
+//         item_array.push(document.getElementById("expert_item_2"));
+//
+//         for (var num in item_array) {
+//             item_array[num].className += " animated";
+//             item_array[num].className += " fadeInUp";
+//         }
+//
+//     },
+//     offset: '75%'
+// })

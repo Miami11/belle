@@ -3,7 +3,7 @@ include 'common/common.php';
 include 'view/header.php';
 ?>
 <!--====banner====-->
-<div class="section">
+<div class="section fixtop">
     <div id="" class="prlx_lyr_1 pic col-xs-12 col-sm-12">
         <div class="text-lg">
             <div id="content_layer" class="textmid">
@@ -110,7 +110,7 @@ include 'view/header.php';
     </div>
 </div>
 <!--====join us====-->
-<div class="join">
+<div id="element-waypoint" class="join">
 
     <div class="color col-xs-12 col-sm-6 ">
         <div class=" text-col2 ">
@@ -124,7 +124,7 @@ include 'view/header.php';
 
                         崇尚純粹的手法和技藝，而非借助高科技的儀器，運用天然草藥和香料來詮釋傳統亞式療法。</p>
                     <div>
-                        <button class="sBtn" type="submit" value="SEARCH">BOOK NOW</button>
+                        <button id="sBtn" class="sBtn" type="submit" value="SEARCH">BOOK NOW</button>
                     </div>
                 </div>
             </div>
@@ -211,59 +211,3 @@ include 'view/header.php';
     </div>
 </div>
 <?php include 'view/footer.php'; ?>
-<script>
-
-    //    new Waypoint({
-    //        element: document.getElementById('element-waypoint'),
-    //        handler: function (direction) {
-    //            //notify(this.element.id + ' triggers at ' + this.triggerPoint)
-    //            var item = document.getElementById("SBtn");
-    //            item.className += " animated";
-    //            item.className += " fadeInUp";
-    //
-    //        },
-    //        offset: '75%'
-    //    })
-
-    //    new Waypoint({
-    //        element: document.getElementById('introduce'),
-    //        handler: function (direction) {
-    //
-    //            var obj = document.getElementById('introduce');
-    //            obj.style.opacity = 1;
-    //            var item_array = [];
-    //            item_array.push(document.getElementById("introduce_item_0"));
-    //            item_array.push(document.getElementById("introduce_item_1"));
-    //            item_array.push(document.getElementById("introduce_item_2"));
-    //
-    //            for (var num in item_array) {
-    //                item_array[num].className += " animated";
-    //                item_array[num].className += " fadeInUp";
-    //            }
-    //
-    //        },
-    //        offset: '75%'
-    //    })
-
-
-    //    new Waypoint({
-    //        element: document.getElementById('expert'),
-    //        handler: function (direction) {
-    //
-    //            var obj = document.getElementById('expert');
-    //            obj.style.opacity = 1;
-    //            var item_array = [];
-    //            item_array.push(document.getElementById("expert_item_0"));
-    //            item_array.push(document.getElementById("expert_item_1"));
-    //            item_array.push(document.getElementById("expert_item_2"));
-    //
-    //            for (var num in item_array) {
-    //                item_array[num].className += " animated";
-    //                item_array[num].className += " fadeInUp";
-    //            }
-    //
-    //        },
-    //        offset: '75%'
-    //    })
-
-</script>
