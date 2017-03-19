@@ -48,7 +48,7 @@ include 'view/header.php';
         <div class="col4Group">
             <div class="tab2">
                 <div class="col-xs-12 col-sm-6 ">
-                    <button class="tablinks " onclick="openCity(event, 'text1')" id="defaultOpen">
+                    <button type="button" class="tablinks " onclick="openCity(event, 'text1')" id="defaultOpen">
 
                         <div class="picholder-col4">
                             <img src="assets/images/equip/equip1.jpg" alt="">
@@ -235,24 +235,3 @@ include 'view/header.php';
 </div>
 
 <?php include 'view/footer.php'; ?>
-
-<script>
-
-
-    function openCity(evt, cityName) {
-        var i, tabcontent, tablinks;
-        tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-        }
-        tablinks = document.getElementsByClassName("tablinks");
-        for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
-        }
-        document.getElementById(cityName).style.display = "block";
-        evt.currentTarget.className += " active";
-    }
-
-    // Get the element with id="defaultOpen" and click on it
-    document.getElementById("defaultOpen").click();
-</script>

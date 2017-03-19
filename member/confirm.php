@@ -31,7 +31,6 @@ include '../view/header.php';
                             <td><i class="fa fa-trash-o" aria-hidden="true"></i></td>
                         </tr>
                     </table>
-                    <a class="mainBtn" href="confirm.php">確認</a>
 
                 </div>
             </div>
@@ -40,7 +39,54 @@ include '../view/header.php';
 
     <div class="clearfix"></div>
 </div>
+<div class="mempage">
+    <div class="container">
+        <div class="col-xs-12 col-sm-12">
+            <div class="text-lg">
+                <div class="textmid textcenter">
 
+                    <h2>收件人資訊</h2>
+                    <div class="room"></div>
+                    <form id="myForm" action="index.php">
+                        <table class="addmem">
+                            <tr>
+                                <th class="titleColor">姓名 <span class="xstext"><br>(最少不能低於6)</span></th>
+                                <td><input type="text" name="memId" id="memId" maxlength="10" size="12"></td>
+                            </tr>
 
+                            <tr>
+                                <th class="titleColor">電話 <span class="xstext"><br>(密碼請含數字、英文)</span></th>
+                                <td><input type="password" name="memPsw" id="memPsw" maxlength="10" size="12"></td>
+                            </tr>
+                            <tr>
+                                <th class="titleColor">地址</th>
+                                <td><input type="text" name="memName" id="memName" maxlength="20" size="12"></td>
+                            </tr>
+                            <tr>
+                                <th class="titleColor">匯款後五碼</th>
+                                <td><input type="text" name="memName" id="memName" maxlength="5" size="12"></td>
+                            </tr>
+                            <tr>
+                                <th class="titleColor">時間</th>
+                                <td><input type="radio" name="sex" value="0">上午9am~12am
+                                    <input type="radio" name="sex" value="1">下午12am~6pm
+                                    <input type="radio" name="sex" value="2">傍晚6pm~9pm
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" align="center">
+                                    <a class="mainBtn" href="confirm.php">確認</a>
+
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
 
 <?php include '../view/footer.php'; ?>
