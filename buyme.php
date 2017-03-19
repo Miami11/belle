@@ -2,7 +2,22 @@
 include 'common/common.php';
 include 'view/header.php';
 
-echo $_GET['product_id'];
+$product_id = isset($_GET['product_id']) ? $_GET['product_id'] : "";
+
+//消毒
+$product_id = mysqli_real_escape_string($con,$product_id);
+
+//取得商品資料
+$detail = array();
+$sql = "SELECT * FROM `products` WHERE `product_id` = '$product_id' LIMIT 0,50";
+$result = $con->query($sql);
+
+while ($row = mysqli_fetch_array($result)) {
+    $detail['name_ch'] = $row['name_ch'];
+    $detail['name_en'] = $row['name_en'];
+    $detail['price'] = $row['price'];
+    $detail['image'] = $row['image'];
+}
 
 ?>
 
@@ -23,13 +38,13 @@ echo $_GET['product_id'];
     <div class="buyme">
         <div class="buycolor textcenter container">
             <div class="col-sm-6 col-xs-12">
-                <img src="assets/images/product/b1b.jpg" alt="">
+                <?php echo '<img src="assets/images/product/'.$detail['image'].'b.jpg" alt="">'; ?>
             </div>
             <div class="col-sm-6 col-xs-12">
                 <div class="textGroup">
-                    <h2>愛魅玫瑰活機淡香氛 </h2>
-                    <h3 class="product-color">Rose Roll-On Fragrance </h3>
-                    <h4>NT1,000</h4>
+                    <h2><?php echo $detail['name_ch']; ?> </h2>
+                    <h3 class="product-color"><?php echo $detail['name_en']; ?></h3>
+                    <h4>NT<?php echo $detail['price']; ?></h4>
                     <a href="#"><h6>  <i class="fa fa-shopping-cart" aria-hidden="true"></i>  &nbsp;點我加入購物車</h6></a>
                     <div class="tab">
                         <button class="tablinks" onclick="openCity(event, 'product')" id="defaultOpen">產品說明</button>
