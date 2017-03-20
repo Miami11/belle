@@ -4,11 +4,11 @@ include 'view/header.php';
 ?>
 
 <!--====banner====-->
-<div class="serviceSection">
+<div class="serviceSection fixtop">
     <div class="prlx_lyr_1 pic col-xs-12 col-sm-12">
-        <div class="text-col1">
+        <div class="text-lg">
             <div id="content_layer" class="textmid">
-                <div class="textarea textcenter">
+                <div class="textareaW100 textcenter">
 
                     <h5 class="bannerTxt">VISIT ONE OF OUR MULTIPLE</h5>
                     <h1 class="bannerTxt2">Our luxury Service</h1>
@@ -27,42 +27,33 @@ include 'view/header.php';
 <div class="join">
 
     <div class="container">
+
+        <div class="service-mia service-item-1 col-xs-12 col-sm-6 "></div>
         <div class="service-color col-xs-12 col-sm-6 ">
             <div class=" text-col2 ">
-                <div class="textmid">
-                    <div class="textarea">
-                        <h2 class="titleColor">精華體驗</h2>
-                        <p>
-                            在這美麗的國度，有源於世界三地的全新數位手技，搭配針對需求調製的頂級花草精油，讓妳紓解僵硬已久的肌肉，撫癒煩悶的心靈並深度釋放壓力，重回安然、安逸、寧靜與和諧的心境。</p>
+                <h2 class="titleColor">精華體驗</h2>
+                <p>
+                    在這美麗的國度，有源於世界三地的全新數位手技，搭配針對需求調製的頂級花草精油，讓妳紓解僵硬已久的肌肉，撫癒煩悶的心靈並深度釋放壓力，重回安然、安逸、寧靜與和諧的心境。</p>
 
-                        <h5>120分鐘護理加上30分鐘茶點</h5>
-                        <h4>TWD 5,200 + 10% /人</h4>
-                        <!--                        <button class="xsBtn" type="submit" value="SEARCH">READ MORE</button>-->
-                    </div>
-                </div>
+                <h5>120分鐘護理加上30分鐘茶點</h5>
+                <h4>TWD 5,200 + 10% /人</h4>
             </div>
         </div>
-        <div class="service-mia service-item-1 col-xs-12 col-sm-6 "></div>
-<div class="clearfix"></div>
-        <div class="service-color right col-xs-12 col-sm-6 ">
-            <div class=" text-col2 ">
-                <div class="textmid">
-                    <div class="textarea">
-                        <h2 class="titleColor">精華體驗</h2>
-                        <p>
-                            在這美麗的國度，有源於世界三地的全新數位手技，搭配針對需求調製的頂級花草精油，讓妳紓解僵硬已久的肌肉，撫癒煩悶的心靈並深度釋放壓力，重回安然、安逸、寧靜與和諧的心境。</p>
-
-                        <h5>120分鐘護理加上30分鐘茶點</h5>
-                        <h4>TWD 5,200 + 10% /人</h4>
-                        <!--                        <button class="xsBtn" type="submit" value="SEARCH">READ MORE</button>-->
-                    </div>
-                </div>
-            </div>
-        </div>
+        <div class="clearfix"></div>
         <div class="service-mia service-item-2 col-xs-12 col-sm-6 "></div>
 
-<div class="clearfix"></div>
+        <div class="service-color right col-xs-12 col-sm-6 ">
+            <div class=" text-col2 ">
+                <h2 class="titleColor">精華體驗</h2>
+                <p>
+                    在這美麗的國度，有源於世界三地的全新數位手技，搭配針對需求調製的頂級花草精油，讓妳紓解僵硬已久的肌肉，撫癒煩悶的心靈並深度釋放壓力，重回安然、安逸、寧靜與和諧的心境。</p>
 
+                <h5>120分鐘護理加上30分鐘茶點</h5>
+                <h4>TWD 5,200 + 10% /人</h4>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
 
 
     </div>
@@ -98,7 +89,7 @@ include 'view/header.php';
                         </tr>
                         <tr>
                             <td>
-                                <input type="text" placeholder="Message*">
+                                <input class="message" type="text" placeholder="Message*">
                             </td>
                         </tr>
 

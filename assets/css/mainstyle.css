@@ -486,7 +486,10 @@ hr {
 .productinner {
     font-size: 14px;
 }
+.tab2 img{
+    filter: brightness(50%);
 
+}
 div.tab {
     overflow: hidden;
     border: 1px solid #ccc;
@@ -510,13 +513,13 @@ div.tab2 button {
     cursor: pointer;
 }
 
-div.tab2 button:hover {
-    filter: brightness(50%);
+div.tab2 button:hover img {
+    filter: brightness(100%);
 
 }
 
-div.tab2 button.active {
-    filter: brightness(50%);
+div.tab2 button.active img {
+    filter: brightness(100%);
 }
 
 /* Style the buttons inside the tab */
@@ -898,6 +901,7 @@ div.tab button.active {
         box-sizing: border-box;
     }
 
+
     .holder {
         background-color: white;
         height: 56px;
@@ -959,7 +963,7 @@ div.tab button.active {
     }
 
     .fixtop {
-        margin-top: 90px;
+        margin-top: 56px;
 
     }
 
@@ -1083,10 +1087,8 @@ div.tab button.active {
         padding-top: 300px;
 
     }
-    .padding_5{
-        padding-bottom: 500px;
-    }
-    .groupBox{
+
+    .de-margin img{
         margin: 0 -10px;
     }
     /*.panel-toggle .point1 {*/
@@ -1118,13 +1120,117 @@ div.tab button.active {
     .fixed-nav{
         display: none;
     }
+    .color {
+        background-color: #873459;
+        height: 70vh;
 
+    }
+
+    .mia {
+        background-image: url("../images/ingredient.jpg");
+        /*padding-bottom: 500px;*/
+        background-size: cover;
+        height: 70vh;
+        filter: brightness(50%);
+
+    }
+
+    .book .text-lg {
+        color: white;
+        margin: auto;
+        text-align: center;
+        font-weight: lighter;
+        width: 90%;
+        position: relative;
+
+    }
+    .book {
+        background-image: url("../images/body1.jpg");
+        height: 78vh;
+        background-size: cover;
+        background-position: bottom;
+        /*filter: brightness(50%); */
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        margin-bottom: 100px;
+
+    }
+    .ServiceBook .text-lg {
+        color: #757575;
+        margin: auto;
+        text-align: center;
+        /*font-weight: lighter;*/
+        width: 100%;
+        position: relative;
+
+    }
+    .textarea table {
+        margin: auto;
+        padding: 0;
+        width: 100%;
+        position: relative;
+    }
 }
+
 
 /* tablet */
 
 
 @media screen and (min-width: 768px) {
+
+    .textarea table {
+        margin: auto;
+        min-width: 60%;
+        padding: 0;
+        width: 60%;
+        position: relative;
+    }
+    .ServiceBook .text-lg {
+        color: #757575;
+        margin: auto;
+        text-align: center;
+        /*font-weight: lighter;*/
+        width: 50%;
+        position: relative;
+        padding-top: 50px;
+
+
+    }
+
+    .book {
+        background-image: url("../images/body1.jpg");
+        height: 60vh;
+        background-size: cover;
+        background-position: bottom;
+        /*filter: brightness(50%); */
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        margin-bottom: 100px;
+
+    }
+    .book .text-lg {
+        color: white;
+        margin: auto;
+        text-align: center;
+        font-weight: lighter;
+        width: 60%;
+        position: relative;
+
+    }
+    .color {
+        background-color: #873459;
+        height: 60vh;
+
+    }
+
+    .mia {
+        background-image: url("../images/ingredient.jpg");
+        /*padding-bottom: 500px;*/
+        background-size: cover;
+        height: 60vh;
+        filter: brightness(50%);
+
+    }
     .loginhead {
         float: right;
         right: 0;
@@ -1317,7 +1423,8 @@ img {
     display: block;
     margin: auto;
     text-align: center;
-    width: 95%;
+    max-width: 320px;
+
 }
 
 .Sstitle {
@@ -1442,22 +1549,9 @@ hr {
     position: relative;
 }
 
-.book {
-    background-image: url("../images/body1.jpg");
-    height: 60vh;
-    background-size: cover;
-    background-position: bottom;
-    /*filter: brightness(50%); */
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    margin-bottom: 100px;
 
-}
 
-.dm {
-    background-image: url("../images/branch/outdoor.jpg");
 
-}
 
 .textareaBox .textbgColor {
     background-color: rgba(0, 0, 0, .3);
@@ -1465,7 +1559,7 @@ hr {
 
 .ServiceBook {
     background-color: rgba(0, 0, 0, .2);
-    height: 87vh;
+    height: 90vh;
     background-size: cover;
     background-position: bottom;
     /*filter: brightness(50%); */
@@ -1474,13 +1568,7 @@ hr {
     margin-bottom: 100px;
 }
 
-.textarea table {
-    margin: auto;
-    min-width: 60%;
-    padding: 0;
-    width: 60%;
-    position: relative;
-}
+
 
 .ServiceBook input {
     display: block;
@@ -1540,25 +1628,9 @@ hr {
 
 }
 
-.book .text-lg {
-    color: white;
-    margin: auto;
-    text-align: center;
-    font-weight: lighter;
-    width: 60%;
-    position: relative;
 
-}
 
-.ServiceBook .text-lg {
-    color: #757575;
-    margin: auto;
-    text-align: center;
-    /*font-weight: lighter;*/
-    width: 50%;
-    position: relative;
 
-}
 
 /*commom use*/
 
@@ -1567,6 +1639,11 @@ hr {
     display: inline-block;
     /*position: absolute;*/
     /*height: 400px;*/
+    vertical-align: middle;
+}
+.textareaW100{
+    width: 100%;
+    display: inline-block;
     vertical-align: middle;
 }
 
@@ -1654,7 +1731,7 @@ hr {
 .book .textmid {
     width: 100%;
     position: absolute;
-    height: 450px;
+    height: 440px;
     font-size: 0;
     left: 0;
 }
@@ -1761,20 +1838,7 @@ hr {
     height: 300px;
 }
 
-.color {
-    background-color: #873459;
-    height: 60vh;
 
-}
-
-.mia {
-    background-image: url("../images/ingredient.jpg");
-    /*padding-bottom: 500px;*/
-    background-size: cover;
-    height: 60vh;
-    filter: brightness(50%);
-
-}
 
 .color2 {
     background-color: #ffffff;
@@ -1803,7 +1867,7 @@ hr {
 
 .service-color {
     background-color: transparent;
-    height: 50vh;
+    height: 52vh;
     /*padding-bottom: 500px;*/
 }
 .right {
@@ -1813,7 +1877,7 @@ hr {
 .service-mia {
     /*padding-bottom: 500px;*/
     background-size: cover;
-    height: 50vh;
+    height: 52vh;
     color: #3e3e3e;
 
 }
@@ -1834,6 +1898,9 @@ hr {
 .round i {
     display: inline-block;
     color: white;
+}
+.message{
+    height: 150px;
 }
 
 .join {
@@ -2075,7 +2142,9 @@ li i {
     }
 }
 
-
+.group-col a{
+    display: inline-block;
+}
 
 
 .introduce2 {

@@ -42,6 +42,7 @@
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/owl.carousel.min.js"></script>
+<script src="../assets/js/lightbox.js"></script>
 <script src="../assets/js/jquery.waypoints.min.js"></script>
 <script src="../assets/js/main.js"></script>
 
