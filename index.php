@@ -158,11 +158,11 @@ include 'view/header.php';
             <h5 class="titleColor">SPECIALISTS</h5>
             <h2 class="Btitle">專家團隊</h2>
             <div class="textHr"></div>
-            <div class="realGroup textcenter ">
+            <div id="expert" class="realGroup textcenter ">
                 <div class="col-lg-4 col-sm-4 col-xs-12 ">
 
 
-                    <div class="pixFrame2"><img class="pplimg" src="assets/images/expertgigi.jpeg"
+                    <div id="expert_item_0" class="pixFrame2"><img class="pplimg" src="assets/images/expertgigi.jpeg"
                                                 data-lightbox="expertgigi">
                     </div>
                     <div class="tableGroup">
@@ -175,7 +175,7 @@ include 'view/header.php';
 
                 </div>
                 <div class="col-lg-4 col-sm-4 col-xs-12 ">
-                    <div class="pixFrame2"><img class="pplimg" src="assets/images/expertb.jpg" alt=""></div>
+                    <div id="expert_item_1" class="pixFrame2"><img class="pplimg" src="assets/images/expertb.jpg" alt=""></div>
                     <div class="tableGroup">
                         <h4 class="Sstitle"><br>Lily<span class="xstext">/護理長</span></h4>
                         <h5 class="smalltext"><br>Belle挑選護療師時還會考慮工作態度及服務意識。其他重要的標準還包括對於工作的熱情、開發自我潛能的意願以及服務爲先的態度。
@@ -184,7 +184,7 @@ include 'view/header.php';
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-4 col-xs-12 ">
-                    <div class="pixFrame2"><img class="pplimg" src="assets/images/expert4.jpg"></div>
+                    <div id="expert_item_2" class="pixFrame2"><img class="pplimg" src="assets/images/expert4.jpg"></div>
                     <div class="tableGroup">
                         <h4 class="Sstitle"><br>Mimi<span class="xstext">/培訓師</span></h4>
                         <h5 class="smalltext"><br>培訓项目涵蓋了Spa護療的全方面，包括人體解剖學知識、重要的穴位、傳统及現代的按摩技藝、適用於不同體重的不同技法。

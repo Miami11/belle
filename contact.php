@@ -98,7 +98,7 @@ include 'view/header.php';
                             </tr>
                             <tr>
                                 <td>
-                                    <input type="text" placeholder="Message*">
+                                    <input class="message" type="text" placeholder="Message*">
                                 </td>
                             </tr>
 

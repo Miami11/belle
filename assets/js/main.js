@@ -17,7 +17,7 @@ $(function () {
                 items: 3
             },
             1000: {
-                items: 5
+                items: 4
             }
         }
     });
@@ -31,7 +31,7 @@ $(function () {
     });
 
 
-    //視差特效
+    //視差
     var parallax = document.querySelectorAll(".prlx_lyr_1"),
         speed = -0.5;
 
@@ -113,9 +113,9 @@ new Waypoint({
     element: document.getElementById('element-waypoint'),
     handler: function (direction) {
         //notify(this.element.id + ' triggers at ' + this.triggerPoint)
-        var item = document.getElementById("sBtn");
+       var item = document.getElementById("sBtn");
         item.className += " animated";
-        item.className += " fadeIn";
+        item.className += " fadeInUp";
 
     },
     offset: '75%'
@@ -137,7 +137,7 @@ new Waypoint({
 
         for (var num in item_array) {
             item_array[num].className += " animated";
-            item_array[num].className += " fadeIn";
+            item_array[num].className += " fadeInUp";
         }
 
     },
@@ -147,22 +147,22 @@ new Waypoint({
 
 
 
-// new Waypoint({
-//     element: document.getElementById('expert'),
-//     handler: function (direction) {
-//
-//         var obj = document.getElementById('expert');
-//         obj.style.opacity = 1;
-//         var item_array = [];
-//         item_array.push(document.getElementById("expert_item_0"));
-//         item_array.push(document.getElementById("expert_item_1"));
-//         item_array.push(document.getElementById("expert_item_2"));
-//
-//         for (var num in item_array) {
-//             item_array[num].className += " animated";
-//             item_array[num].className += " fadeInUp";
-//         }
-//
-//     },
-//     offset: '75%'
-// })
+new Waypoint({
+    element: document.getElementById('expert'),
+    handler: function (direction) {
+
+        var obj = document.getElementById('expert');
+        obj.style.opacity = 1;
+        var item_array = [];
+        item_array.push(document.getElementById("expert_item_0"));
+        item_array.push(document.getElementById("expert_item_1"));
+        item_array.push(document.getElementById("expert_item_2"));
+
+        for (var num in item_array) {
+            item_array[num].className += " animated";
+            item_array[num].className += " fadeInUp";
+        }
+
+    },
+    offset: '75%'
+})

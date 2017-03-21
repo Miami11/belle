@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Lucida Grande', '標楷體', Helvetica, Arial, sans-serif;
+    font-family: 'Lucida Grande', '思源黑體','細明體', Helvetica, Arial, sans-serif;
     color: #222;
     font-size: 16px;
     line-height: 1.5;
@@ -1124,7 +1124,7 @@ div.tab button.active {
     }
     .color {
         background-color: #873459;
-        height: 70vh;
+        height: 75vh;
 
     }
 
@@ -1132,7 +1132,7 @@ div.tab button.active {
         background-image: url("../images/ingredient.jpg");
         /*padding-bottom: 500px;*/
         background-size: cover;
-        height: 70vh;
+        height: 75vh;
         filter: brightness(50%);
 
     }
@@ -1174,12 +1174,12 @@ div.tab button.active {
     }
     .ServiceBook {
         background-color: rgba(0, 0, 0, .2);
-        height: 103vh;
+        height: 115vh;
         background-size: cover;
         background-position: bottom;
         /*filter: brightness(50%); */
         background-repeat: no-repeat;
-        background-attachment: fixed;
+        /*background-attachment: fixed;*/
         margin-bottom: 80px;
     }
 
@@ -1214,7 +1214,7 @@ div.tab button.active {
     }
     .ServiceBook {
         background-color: rgba(0, 0, 0, .2);
-        height: 85vh;
+        height: 90vh;
         background-size: cover;
         background-position: bottom;
         /*filter: brightness(50%); */
@@ -1264,7 +1264,7 @@ div.tab button.active {
     }
     .color {
         background-color: #873459;
-        height: 60vh;
+        height: 65vh;
 
     }
 
@@ -1272,7 +1272,7 @@ div.tab button.active {
         background-image: url("../images/ingredient.jpg");
         /*padding-bottom: 500px;*/
         background-size: cover;
-        height: 60vh;
+        height: 65vh;
         filter: brightness(50%);
 
     }
@@ -1935,7 +1935,7 @@ hr {
     color: white;
 }
 .message{
-    height: 150px;
+    height: 130px;
 }
 
 .join {
