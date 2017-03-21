@@ -10,7 +10,7 @@ include 'view/header.php';
             <div id="content_layer" class="textmid">
                 <div class="textareaW100 textcenter">
 
-                    <h5 class="bannerTxt">Come to here and enjoy</h5>
+                    <h5 class="bannerTxt">LET ME INTRODUCE</h5>
                     <h1 class="bannerTxt2">Our Environment</h1>
                     <div class="textHr">
 
@@ -51,9 +51,7 @@ include 'view/header.php';
                     <button type="button" class="tablinks " onclick="openCity(event, 'text1')" id="defaultOpen">
 
                         <div class="picholder-col4">
-                            <a href="assets/images/equip/equip1.jpg" data-lightbox="equip" data-title="我們以尊重皮膚生理機能的同時也在積極地倡導Active
-                Ecology的概念下，採用先進的技術來開發新產品。我們運用皮膚科學研究所C.E.R.E.D.A.P的科學家與世界各地不同領域的科學家們聯合研究出的成果在產品開發上。這樣傑出的研究成果獲得大家的認同也取得60種以上的專利。">> <img
-                                        src="assets/images/equip/equip1.jpg" alt=""></a>
+                            <img src="assets/images/equip/equip1.jpg" alt="">
                         </div>
                     </button>
                 </div>
@@ -61,10 +59,8 @@ include 'view/header.php';
 
                     <button class="tablinks" onclick="openCity(event, 'text2')">
                         <div class="picholder-col4">
-                            <a href="assets/images/equip/equip2.jpg" data-lightbox="equip" data-title="利用超音波按摩噴頭，帶動空氣形成陰陽離子，對人體背、腰等部位按摩刺激，以迅速消除疲勞，並可減輕慢性消化性疾病的不適感，使全身舒暢。
-                各式鵝頸沖擊泉
-                利用強力沖水壓對頭、頸、肩部進行按摩、藉以消除全身的緊張感，達到減肥、減低持續性腰痛、背痛、血液循環、鎮靜的功能。"> <img
-                                        src="assets/images/equip/equip2.jpg" alt=""></a>
+                            <img
+                                    src="assets/images/equip/equip2.jpg" alt="">
                         </div>
                     </button>
                 </div>
@@ -72,8 +68,7 @@ include 'view/header.php';
 
                     <button class="tablinks" onclick="openCity(event, 'text3')">
                         <div class="picholder-col4">
-                            <a href="assets/images/equip/equip3.jpg" data-lightbox="equip" data-title="現代科學研究證明蒸氣療法是通過熱的作用，可以加速血液、淋巴液的循環、促進新陳代謝、開發汗孔、活血通筋、排除體內毒素去除風寒、溼熱、通過全身薰蒸可緩解症狀，清潔肌膚、消除肥胖、有利於疾病治療。"> <img
-                                        src="assets/images/equip/equip3.jpg" alt=""></a>
+                            <img src="assets/images/equip/equip3.jpg" alt="">
                         </div>
                     </button>
                 </div>
@@ -81,8 +76,8 @@ include 'view/header.php';
 
                     <button class="tablinks" onclick="openCity(event, 'text4')">
                         <div class="picholder-col4">
-                            <a href="assets/images/equip/equip4.jpg" data-lightbox="equip" data-title="美國太空總署(NASA)研究報告指出在紅外線內，對人體有幫助的6-14微米遠紅外線，能滲透人體內部15CM，從內部發熱。從體內開始作用，能促進微血管的擴張，使血液循環順暢，達到新陳代謝的目的，盡而增加身體的免疫力（抵抗力）及治癒力。"> <img
-                                        src="assets/images/equip/equip4.jpg" alt=""></a>
+                            <img src="assets/images/equip/equip4.jpg" alt="">
+
                         </div>
                     </button>
                 </div>
