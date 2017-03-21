@@ -4,14 +4,14 @@ include 'view/header.php';
 ?>
 
     <!--====banner====-->
-    <div class="serviceSection">
+    <div class="serviceSection fixtop">
         <div class="prlx_lyr_1 pic col-xs-12 col-sm-12">
-            <div class="text-col1">
+            <div class="text-lg">
                 <div id="content_layer" class="textmid">
-                    <div class="textarea textcenter">
+                    <div class="textareaW100 textcenter">
 
-                        <h5 class="bannerTxt">VISIT ONE OF OUR MULTIPLE</h5>
-                        <h1 class="shadow">Our luxury Service</h1>
+                        <h5 class="bannerTxt">CONTACTS</h5>
+                        <h1 class="bannerTxt2">Find and Call</h1>
                         <div class="textHr">
 
                         </div>
@@ -67,10 +67,10 @@ include 'view/header.php';
             <div class="col-xs-12">
                 <img src="assets/images/map.png" alt="">
             </div>
-
+            <div class="clearfix"></div>
         </div>
     </div>
-<!--====book====-->
+    <!--====book====-->
     <div class="ServiceBook">
         <div class="col-xs-12 col-sm-12">
             <div class="text-lg">
@@ -112,4 +112,3 @@ include 'view/header.php';
     </div>
 
 
-<?php include 'view/footer.php'; ?>

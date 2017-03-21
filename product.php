@@ -23,11 +23,11 @@ while ($row = mysqli_fetch_array($result)) {
 
 ?>
 <!--====banner====-->
-<div class="productSection">
+<div class="productSection fixtop">
     <div class="prlx_lyr_1 pic col-xs-12 col-sm-12">
-        <div class="text-col1">
+        <div class="text-lg">
             <div id="content_layer" class="textmid">
-                <div class="textarea textcenter">
+                <div class="textareaW100 textcenter">
 
                     <h5 class="bannerTxt">The Best body care</h5>
                     <h1 class="bannerTxt2">Luxury Product</h1>

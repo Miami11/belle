@@ -36,7 +36,7 @@ include 'view/header.php';
                     在這美麗的國度，有源於世界三地的全新數位手技，搭配針對需求調製的頂級花草精油，讓妳紓解僵硬已久的肌肉，撫癒煩悶的心靈並深度釋放壓力，重回安然、安逸、寧靜與和諧的心境。</p>
 
                 <h5>120分鐘護理加上30分鐘茶點</h5>
-                <h4>TWD 5,200 + 10% /人</h4>
+                <h4>TWD 3,200 + 10% /人</h4>
             </div>
         </div>
         <div class="clearfix"></div>
@@ -44,16 +44,43 @@ include 'view/header.php';
 
         <div class="service-color right col-xs-12 col-sm-6 ">
             <div class=" text-col2 ">
-                <h2 class="titleColor">精華體驗</h2>
+                <h2 class="titleColor">礦物體驗</h2>
                 <p>
-                    在這美麗的國度，有源於世界三地的全新數位手技，搭配針對需求調製的頂級花草精油，讓妳紓解僵硬已久的肌肉，撫癒煩悶的心靈並深度釋放壓力，重回安然、安逸、寧靜與和諧的心境。</p>
+                    Belle全新專業手技，結合風靡全球、好萊塢巨星趨之若騖的纖體產品，其礦物質效能如猛獸般迅速又強烈，可激化肌膚循環，改善長久以來在意的部位，讓您看見優雅、窈窕的曲線！</p>
 
-                <h5>120分鐘護理加上30分鐘茶點</h5>
-                <h4>TWD 5,200 + 10% /人</h4>
+                <h5>50分鐘護理加上30分鐘茶點</h5>
+                <h4>TWD 4,500 + 10% /人</h4>
             </div>
         </div>
-
         <div class="clearfix"></div>
+        <div class="service-mia service-item-3 col-xs-12 col-sm-6 "></div>
+        <div class="service-color col-xs-12 col-sm-6 ">
+            <div class=" text-col2 ">
+                <h2 class="titleColor">手部體驗</h2>
+                <p>
+                    課程介紹
+                    藉由頂級的修護配方：荷荷芭油、杏仁乳液以及維他命E，搭配獨家手技及手套敷膜，保養範圍包含手臂可以美化指形、肘部，瞬時回復年輕細緻豐潤的肌膚。</p>
+
+                <h5>50分鐘護理加上30分鐘茶點</h5>
+                <h4>TWD 2,800 + 10% /人</h4>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+
+        <div class="service-mia right service-item-4 col-xs-12 col-sm-6 "></div>
+
+        <div class="service-color right col-xs-12 col-sm-6 ">
+            <div class=" text-col2 ">
+                <h2 class="titleColor">腳步體驗</h2>
+                <p>以極滋潤的蔗糖晶體與蜂蜜香氛的甜蜜去角質霜，能在煥膚時給予肌膚保水效果，搭配溫熱修護膜與電熱足套的溫暖舒緩，讓豐潤成份更加滲透。
+                </p>
+
+                <h5>50分鐘護理加上30分鐘茶點</h5>
+                <h4>TWD 4,500 + 10% /人</h4>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+
 
 
     </div>

@@ -529,19 +529,21 @@ div.tab button {
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 12px 14px;
+    padding: 14px 16px;
     transition: 0.3s;
     font-size: 15px;
 }
 
 /* Change background color of buttons on hover */
 div.tab button:hover {
-    background-color: #ddd;
+    background-color: transparent;
+    color: #b8889c;
 }
 
 /* Create an active/current tablink class */
 div.tab button.active {
-    background-color: #ccc;
+    background-color: transparent;
+    color: #b8889c;
 }
 
 /* Style the tab content */
@@ -1066,7 +1068,7 @@ div.tab button.active {
         /*margin: auto;*/
         display: block;
         /*display: none;*/
-        margin: 20px -10px;
+        margin: 20px 0;
     }
     .equip2 h2{
         margin: 15px 0;
@@ -1170,6 +1172,28 @@ div.tab button.active {
         width: 100%;
         position: relative;
     }
+    .ServiceBook {
+        background-color: rgba(0, 0, 0, .2);
+        height: 103vh;
+        background-size: cover;
+        background-position: bottom;
+        /*filter: brightness(50%); */
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        margin-bottom: 80px;
+    }
+
+    .service-mia {
+        /*padding-bottom: 500px;*/
+        background-size: cover;
+        height: 52vh;
+        color: #3e3e3e;
+        margin: 50px 0;
+
+    }
+    .map img{
+        width: 100%;
+    }
 }
 
 
@@ -1177,6 +1201,27 @@ div.tab button.active {
 
 
 @media screen and (min-width: 768px) {
+    .map img{
+        width: 50%;
+    }
+    .service-mia {
+        /*padding-bottom: 500px;*/
+        background-size: cover;
+        height: 52vh;
+        color: #3e3e3e;
+        margin-bottom: 70px;
+
+    }
+    .ServiceBook {
+        background-color: rgba(0, 0, 0, .2);
+        height: 85vh;
+        background-size: cover;
+        background-position: bottom;
+        /*filter: brightness(50%); */
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        margin-bottom: 80px;
+    }
 
     .textarea table {
         margin: auto;
@@ -1488,6 +1533,8 @@ hr {
 .product-background {
     background-image: url("../images/product/buyme.jpg");
     background-size: cover;
+    margin-bottom: 100px;
+
     /*padding: 100px;*/
 }
 
@@ -1495,13 +1542,16 @@ hr {
     .product-background {
         padding: 100px 0;
     }
+    .login-background{
+        padding: 100px 0;
+
+    }
 }
 
 .login-background {
     background-image: url("../images/branch/login2.jpg");
     background-size: cover;
     /*height: 1200px;*/
-    padding: 100px;
     margin-bottom: 100px;
 
 }
@@ -1557,16 +1607,7 @@ hr {
     background-color: rgba(0, 0, 0, .3);
 }
 
-.ServiceBook {
-    background-color: rgba(0, 0, 0, .2);
-    height: 90vh;
-    background-size: cover;
-    background-position: bottom;
-    /*filter: brightness(50%); */
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    margin-bottom: 100px;
-}
+
 
 
 
@@ -1575,7 +1616,7 @@ hr {
     box-sizing: border-box;
     border-radius: 5px;
     font-size: 10px;
-    line-height: 25px;
+    line-height: 23px;
     letter-spacing: 2.4px;
     width: 100%;
     border: 1px solid #ccc;
@@ -1874,13 +1915,7 @@ hr {
     float: right;
 }
 
-.service-mia {
-    /*padding-bottom: 500px;*/
-    background-size: cover;
-    height: 52vh;
-    color: #3e3e3e;
 
-}
 .service-item-1 {
     background-image: url("../images/branch/stonegirl.jpg");
 
@@ -1983,11 +2018,10 @@ li i {
 
 .picholder-col4 {
     overflow: hidden;
-    /*border-radius: 5px;*/
     text-align: center;
     display: inline-block;
     position: relative;
-    margin: -15px;
+    /*margin: -15px;*/
 
 }
 
@@ -2037,6 +2071,7 @@ li i {
 .buyitem img {
     width: 30%;
 }
+
 
 .mempage {
     padding: 100px 0;

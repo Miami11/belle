@@ -24,17 +24,17 @@ while ($row = mysqli_fetch_array($result)) {
 
 <!--progress animate-->
 
-<div class="wholecolor">
-    <div class="spinner">
-        <div class="bounce1"></div>
-        <div class="bounce2"></div>
-        <div class="bounce3"></div>
-    </div>
-</div>
+<!--<div class="wholecolor">-->
+<!--    <div class="spinner">-->
+<!--        <div class="bounce1"></div>-->
+<!--        <div class="bounce2"></div>-->
+<!--        <div class="bounce3"></div>-->
+<!--    </div>-->
+<!--</div>-->
 
 
 <!--====buyme====-->
-<div class="product-background">
+<div class="product-background fixtop">
     <div class="buyme">
         <div class="buycolor textcenter container">
             <div class="col-sm-6 col-xs-12">
@@ -48,7 +48,7 @@ while ($row = mysqli_fetch_array($result)) {
                     <a href="#"><h6>  <i class="fa fa-shopping-cart" aria-hidden="true"></i>  &nbsp;點我加入購物車</h6></a>
                     <div class="tab">
                         <button class="tablinks" onclick="openCity(event, 'product')" id="defaultOpen">產品說明</button>
-                        <button class="tablinks" onclick="openCity(event, 'ship')">運送須知</button>
+                        <button class="tablinks" onclick="openCity(event, 'ship')">使用方法</button>
                     </div>
 
                     <div id="product" class="tabcontent">
@@ -57,8 +57,10 @@ while ($row = mysqli_fetch_array($result)) {
                     </div>
 
                     <div id="ship" class="tabcontent">
-                        <h3>訂購滿NT5000免運費</h3>
-                        <p>Paris is the capital of France.</p>
+                        <h3>使用方法</h3>
+                        <p>
+
+                            直接塗抹於香氣容易飄散的之處，如：頸側、手腕內側、耳後或胸口位置。建議配合使用其他玫瑰香味保養品，可令香氣層次更豐富。</p>
                     </div>
 
                 </div>
@@ -68,40 +70,21 @@ while ($row = mysqli_fetch_array($result)) {
     </div>
 
 </div>
-<div class="room"></div>
+
+
+<!--<script>-->
+<!--    $(function() {-->
+<!---->
+<!--    });-->
+<!---->
+<!--    $(window).on( "load", function() {-->
+<!--        $('.wholecolor').css("display","none");-->
+<!--    });-->
+<!---->
+<!---->
+<!--</script>-->
 
 <?php include 'view/footer.php'; ?>
 
 
-<script>
-    $(function() {
 
-    });
-
-    $(window).on( "load", function() {
-        $('.wholecolor').css("display","none");
-    });
-
-
-    function openCity(evt, cityName) {
-        var i, tabcontent, tablinks;
-        tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-        }
-        tablinks = document.getElementsByClassName("tablinks");
-        for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
-        }
-        document.getElementById(cityName).style.display = "block";
-        evt.currentTarget.className += " active";
-    }
-
-    // Get the element with id="defaultOpen" and click on it
-    document.getElementById("defaultOpen").click();
-</script>
-
-
-
-</body>
-</html>
