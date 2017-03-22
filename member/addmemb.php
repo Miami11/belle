@@ -56,9 +56,10 @@ include '../view/header.php';
                             </table>
                         </form>
                     </div>
+                    <div class="clearfix"></div>
+
                 </div>
             </div>
-            <div class="clearfix"></div>
         </div>
     </div>
     <script>

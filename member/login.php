@@ -74,6 +74,7 @@ include '../view/header.php';
 
                 </div>
             </div>
+        <div class="clearfix"></div>
         </div>
     </div>
 

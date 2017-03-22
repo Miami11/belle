@@ -18,7 +18,7 @@ include 'view/header.php';
                         <div class="wrapper">
 
                             <div>
-                                <button class="mainBtn animated fadeInUp" type="submit" value="SEARCH">BOOK NOW</button>
+                                <button class="mainBtn animated fadeInUp" type="submit" value="SEARCH" onclick="window.location.href='contact.php'">BOOK NOW</button>
                             </div>
                         </div>
 
@@ -132,7 +132,7 @@ include 'view/header.php';
 
                         崇尚純粹的手法和技藝，而非借助高科技的儀器，運用天然草藥和香料來詮釋傳統亞式療法。</p>
                     <div>
-                        <button id="sBtn" class="sBtn margin_1" type="submit" value="SEARCH">BOOK NOW</button>
+                        <button id="sBtn" class="sBtn margin_1" type="submit" value="SEARCH" onclick="window.location.href='contact.php'">BOOK NOW</button>
                     </div>
                 </div>
             </div>
