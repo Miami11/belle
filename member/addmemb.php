@@ -16,7 +16,7 @@ include '../view/header.php';
 
                         <h2>申請加入會員</h2>
                         <div class="room"></div>
-                        <form id="myForm" action="index.php">
+                        <form id="myForm" action="cartList.php">
                             <table class="addmem">
                                 <tr>
                                     <th class="titleColor">帳號 <span class="xstext"><br>(最少不能低於6)</span></th>

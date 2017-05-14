@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Lucida Grande', '思源黑體','微軟正黑體', Helvetica, Arial, sans-serif;
+    font-family: 'Lucida Grande', '細明體','微軟正黑體', Helvetica, Arial, sans-serif;
     color: #222;
     font-size: 16px;
     line-height: 1.5;
@@ -41,45 +41,87 @@ p {
     font-size: 15px;
 }
 
-.textHr {
+ul.tabs{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+ul.tabs li{
+    background: none;
+    color: #222;
+    display: inline-block;
+    padding: 10px 15px;
+    cursor: pointer;
+}
 
-    position: relative;
-    width: 105px;
-    height: 100px;
+ul.tabs li.current{
+    background: #ededed;
+    color: #222;
+}
+
+.tab-content{
+    display: none;
+    background: #ededed;
+    padding: 15px;
+}
+
+.tab-content.current{
+    display: inherit;
+}
+
+
+
+.textHr{
+    max-height: 10vh;
+    max-width: 330px;
+    background-repeat: no-repeat;
+    background-image: url("../images/hr_1.png");
     text-align: center;
     margin: auto;
+    position: relative;
+    height: 100px;
 }
+.textHr img{
+    width: 10%;
+}
+/*.textHr {*/
 
-.textHr:before,
-.textHr:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 30px;
-    height: 30px;
-    border: 10px solid #f4aeba;
-    -moz-border-radius: 50px 50px 0 50px;
-    border-radius: 50px 50px 0 50px;
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    background-color: transparent;
-}
+    /*position: relative;*/
+    /*width: 105px;*/
+    /*height: 100px;*/
+    /*text-align: center;*/
+    /*margin: auto;*/
+/*}*/
+/*.textHr:before,*/
+/*.textHr:after {*/
+    /*content: "";*/
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    /*width: 30px;*/
+    /*height: 30px;*/
+    /*border: 10px solid #f4aeba;*/
+    /*-moz-border-radius: 50px 50px 0 50px;*/
+    /*border-radius: 50px 50px 0 50px;*/
+    /*-webkit-transform: rotate(-45deg);*/
+    /*-moz-transform: rotate(-45deg);*/
+    /*-ms-transform: rotate(-45deg);*/
+    /*-o-transform: rotate(-45deg);*/
+    /*transform: rotate(-45deg);*/
+    /*background-color: transparent;*/
+/*}*/
 
-.textHr:after {
-    left: auto;
-    right: 0;
-    -moz-border-radius: 50px 50px 50px 0;
-    border-radius: 50px 50px 50px 0;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
+/*.textHr:after {*/
+    /*left: auto;*/
+    /*right: 0;*/
+    /*-moz-border-radius: 50px 50px 50px 0;*/
+    /*border-radius: 50px 50px 50px 0;*/
+    /*-webkit-transform: rotate(45deg);*/
+    /*-moz-transform: rotate(45deg);*/
+    /*-ms-transform: rotate(45deg);*/
+    /*-o-transform: rotate(45deg);*/
+    /*transform: rotate(45deg);*/
+/*}*/
 
 .bookingtitle {
     margin: auto;
@@ -1126,8 +1168,10 @@ div.tab button.active {
         display: none;
     }
     .color {
-        background-color: #873459;
-        height: 75vh;
+        background-image: url("../images/join.png");
+        height: 70vh;
+
+        background-size: cover;
 
     }
 
@@ -1141,23 +1185,24 @@ div.tab button.active {
     }
 
     .book .text-lg {
-        color: white;
+        /*color: white;*/
         margin: auto;
         text-align: center;
-        font-weight: lighter;
+
         width: 90%;
         position: relative;
-
+        color: #3e3e3e;
     }
     .book {
-        background-image: url("../images/body1.jpg");
+        background-image: url("../images/gift.png");
         height: 78vh;
-        background-size: cover;
-        background-position: bottom;
+        background-size: contain;
+        background-position: top;
         /*filter: brightness(50%); */
         background-repeat: no-repeat;
-        background-attachment: fixed;
+        /*background-attachment: fixed;*/
         margin-bottom: 100px;
+
 
     }
     .ServiceBook .text-lg {
@@ -1246,28 +1291,163 @@ div.tab button.active {
     }
 
     .book {
-        background-image: url("../images/body1.jpg");
+        background-image: url("../images/giftbig.png");
         height: 60vh;
-        background-size: cover;
-        background-position: bottom;
+        background-size: contain;
+
+        background-position: center;
         /*filter: brightness(50%); */
         background-repeat: no-repeat;
-        background-attachment: fixed;
+        /*background-attachment: fixed;*/
         margin-bottom: 100px;
 
     }
+    .move{
+        -webkit-transform-origin: 50% 90%;
+        -moz-transform-origin: 50% 90%;
+        transform-origin: 50% 90%;
+        -webkit-animation: light 4s 0.1s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+        -moz-animation: light 4s 0.1s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+        animation: light 4s 0.1s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
+    }
+    .wave{
+        -webkit-animation: swing 4s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+        -moz-animation: swing 4s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+        animation: swing 4s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955); }
+
+
+@-webkit-keyframes swing {
+    0% {
+        -webkit-transform: rotateZ(-10deg);
+        -moz-transform: rotateZ(-10deg);
+        transform: rotateZ(-10deg); }
+    100% {
+        -webkit-transform: rotateZ(5deg);
+        -moz-transform: rotateZ(5deg);
+        transform: rotateZ(5deg); } }
+@-moz-keyframes swing {
+    0% {
+        -webkit-transform: rotateZ(-10deg);
+        -moz-transform: rotateZ(-10deg);
+        transform: rotateZ(-10deg); }
+    100% {
+        -webkit-transform: rotateZ(5deg);
+        -moz-transform: rotateZ(5deg);
+        transform: rotateZ(5deg); } }
+@-ms-keyframes swing {
+    0% {
+        -webkit-transform: rotateZ(-10deg);
+        -moz-transform: rotateZ(-10deg);
+        transform: rotateZ(-10deg); }
+    100% {
+        -webkit-transform: rotateZ(5deg);
+        -moz-transform: rotateZ(5deg);
+        transform: rotateZ(5deg); } }
+@keyframes swing {
+    0% {
+        -webkit-transform: rotateZ(-10deg);
+        -moz-transform: rotateZ(-10deg);
+        transform: rotateZ(-10deg); }
+    100% {
+        -webkit-transform: rotateZ(5deg);
+        -moz-transform: rotateZ(5deg);
+        transform: rotateZ(5deg); } }
+    .bulloon1{
+        margin: 0px -64px;
+        background-size: 100px 224px;
+        height: 224px;
+        width: 128px;
+        background-image: url(../images/blue.png);
+        background-repeat: no-repeat;
+        /*bottom: 64px;*/
+        position: absolute;
+        right: -3%;
+    }
+    .bulloon2{
+        margin: 0px -64px;
+        background-size: 100px 224px;
+        height: 224px;
+        width: 128px;
+        background-image: url(../images/red.png);
+        background-repeat: no-repeat;
+        bottom: 14px;
+        position: absolute;
+        right: 100%;
+    }
+    .bulloon3{
+        margin: 0px -64px;
+        background-size: 100px 224px;
+        height: 224px;
+        width: 128px;
+        background-image: url(../images/purple.png);
+        background-repeat: no-repeat;
+        bottom: 35px;
+        position: absolute;
+        right: -10%;
+    }
+    @-webkit-keyframes light {
+        0% {
+            -webkit-transform: translate3d(15%,0,0) rotateZ(10deg);
+            -moz-transform: translate3d(15%,0,0) rotateZ(10deg);
+            transform: translate3d(15%,0,0) rotateZ(10deg); }
+        100% {
+            -webkit-transform: translate3d(-15%,0,0) rotateZ(-10deg);
+            -moz-transform: translate3d(-15%,0,0) rotateZ(-10deg);
+            transform: translate3d(-15%,0,0) rotateZ(-10deg);
+        }}
+
+
+
+
+
+    @-moz-keyframes light {
+        0% {
+            -webkit-transform: translate3d(15%,0,0) rotateZ(10deg);
+            -moz-transform: translate3d(15%,0,0) rotateZ(10deg);
+            transform: translate3d(15%,0,0) rotateZ(10deg); }
+        100% {
+            -webkit-transform: translate3d(-15%,0,0) rotateZ(-10deg);
+            -moz-transform: translate3d(-15%,0,0) rotateZ(-10deg);
+            transform: translate3d(-15%,0,0) rotateZ(-10deg); }
+    }
+    @-ms-keyframes light {
+        0% {
+            -webkit-transform: translate3d(15%,0,0) rotateZ(10deg);
+            -moz-transform: translate3d(15%,0,0) rotateZ(10deg);
+            transform: translate3d(15%,0,0) rotateZ(10deg);
+        }
+        100% {
+            -webkit-transform: translate3d(-15%,0,0) rotateZ(-10deg);
+            -moz-transform: translate3d(-15%,0,0) rotateZ(-10deg);
+            transform: translate3d(-15%,0,0) rotateZ(-10deg); }
+    }
+    @keyframes light {
+        0% {
+            -webkit-transform: translate3d(15%,0,0) rotateZ(10deg);
+            -moz-transform: translate3d(15%,0,0) rotateZ(10deg);
+            transform: translate3d(15%,0,0) rotateZ(10deg); }
+        100% {
+            -webkit-transform: translate3d(-15%,0,0) rotateZ(-10deg);
+            -moz-transform: translate3d(-15%,0,0) rotateZ(-10deg);
+            transform: translate3d(-15%,0,0) rotateZ(-10deg); }
+    }
+
     .book .text-lg {
-        color: white;
+        /*color: white;*/
         margin: auto;
         text-align: center;
-        font-weight: lighter;
+
         width: 60%;
         position: relative;
+        color: #3e3e3e;
 
     }
     .color {
-        background-color: #873459;
-        height: 65vh;
+        background-image: url("../images/join.png");
+        height: 60vh;
+
+        background-size: cover;
 
     }
 
@@ -1275,7 +1455,7 @@ div.tab button.active {
         background-image: url("../images/ingredient.jpg");
         /*padding-bottom: 500px;*/
         background-size: cover;
-        height: 65vh;
+        height: 60vh;
         filter: brightness(50%);
 
     }
@@ -1781,6 +1961,7 @@ hr {
     height: 440px;
     font-size: 0;
     left: 0;
+
 }
 
 .productSection .textmid {
@@ -1815,10 +1996,11 @@ hr {
 .join .textmid {
     width: 100%;
     position: absolute;
-    height: 400px;
+    height: 450px;
     text-align: left;
     left: 0;
     font-size: 0;
+
 
 }
 
@@ -1846,6 +2028,7 @@ hr {
     display: inline-block;
     vertical-align: middle;
     width: 100%;
+    color: #5c4e55;
     /*position: relative;*/
 }
 
@@ -1889,7 +2072,7 @@ hr {
 
 .color2 {
     background-color: #ffffff;
-    height: 40v
+    height: 40vh;
 }
 
 .env-mia {
@@ -2012,12 +2195,12 @@ li i {
 }
 
 .picholder {
-    height: 240px;
+    height: 180px;
     max-width: 320px;
     overflow: hidden;
     border-radius: 5px;
     text-align: center;
-    display: inline-block;
+    display: inline-block;  
     position: relative;
 
 }

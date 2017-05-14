@@ -9,8 +9,8 @@ include 'view/header.php';
             <div id="content_layer" class="textmid">
                 <div class="textareaBox textcenter">
 
-                    <h5 class="bannerTxt animated fadeInUp">VISIT ONE OF OUR MULTIPLE</h5>
-                    <h1 class="bannerTxt2 animated fadeInUp">Sessions of Relaxation</h1>
+                    <h5 class="bannerTxt animated fadeInUp">Session of relation</h5>
+                    <h1 class="bannerTxt2 animated fadeInUp">給妳最舒適的每一刻</h1>
                     <hr class="room">
                     <div class="wrapperGroup">
 
@@ -18,7 +18,7 @@ include 'view/header.php';
                         <div class="wrapper">
 
                             <div>
-                                <button class="mainBtn animated fadeInUp" type="submit" value="SEARCH" onclick="window.location.href='contact.php'">BOOK NOW</button>
+                                <button class="mainBtn animated fadeInUp" type="submit" value="SEARCH" onclick="window.location.href='contact.php'">立即預約</button>
                             </div>
                         </div>
 
@@ -132,7 +132,7 @@ include 'view/header.php';
 
                         崇尚純粹的手法和技藝，而非借助高科技的儀器，運用天然草藥和香料來詮釋傳統亞式療法。</p>
                     <div>
-                        <button id="sBtn" class="sBtn margin_1" type="submit" value="SEARCH" onclick="window.location.href='contact.php'">BOOK NOW</button>
+                        <button id="sBtn" class="sBtn margin_1" type="submit" value="SEARCH" onclick="window.location.href='contact.php'">加入會員</button>
                     </div>
                 </div>
             </div>
@@ -209,14 +209,18 @@ include 'view/header.php';
                 <div class="textareaBox textcenter">
                     <h5>OUR SPECIAL OFFER</h5>
                     <h2 class="Wtitile">頂級禮遇</h2>
-                    <p>
-                        尊重肌膚的機能並將變美麗的成份傳遞至所需的地方，自然喚醒肌膚本身原生的美麗。
-                        不僅是現在，對於以後的肌膚狀態也是小心翼翼地呵謢，讓您的美麗綿延不絕
+                    <h3>
 
-                    </p>
+                        邀您一同體驗 頂級禮程全新熟客回饋方案
+
+                    </h3>
+                    <span class="move bulloon1"></span>
+                    <span class="wave bulloon2"></span>
+                    <span class="move bulloon3"></span>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
 <?php include 'view/footer.php'; ?>
