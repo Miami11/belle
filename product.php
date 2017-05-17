@@ -31,7 +31,7 @@ while ($row = mysqli_fetch_array($result)) {
 
                     <h5 class="bannerTxt">The Best body care</h5>
                     <h1 class="bannerTxt2">Luxury Product</h1>
-                    <div class="textHr">
+
 
                     </div>
                 </div>
@@ -42,32 +42,37 @@ while ($row = mysqli_fetch_array($result)) {
 </div>
 
 <!--====product====-->
-<div class="product">
-    <div class="container">
-        <div class="productGroup">
+<div class="product-wrapper">
+    <div class="product">
+        <div class="container">
+            <div class="productGroup">
 
-            <?php
-            foreach ($products as $item) {
-                echo "<div class='col-sm-4 col-xs-12'>";
-                echo "<div class='product-holder'>";
-                echo "<a href='buyme.php?product_id=" . $item['product_id'] . "'>";
-                echo "<img src='assets/images/product/" . $item['image'] . ".jpeg' alt=''>";
-                echo "</a>";
-                echo "</div>";
-                echo "<div class='product-text'>";
-                echo "<h5>" . $item['name_ch'] . "</h5>";
-                echo "<h5>" . $item['name_en'] . "</h5>";
-                echo "<h6>NT$" . $item['price'] . "</h6>";
-                echo "</div>";
-                echo "</div>";
-            }
+                <?php
+                foreach ($products as $item) {
+                    echo "<div class='col-sm-4 col-xs-12'>";
+                    echo "<div class='product-holder'>";
+                    echo "<a href='buyme.php?product_id=" . $item['product_id'] . "'>";
+                    echo "<img src='assets/images/product/" . $item['image'] . ".jpeg' alt=''>";
+                    echo "</a>";
+                    echo "</div>";
+                    echo "<div class='product-text'>";
+                    echo "<h5>" . $item['name_ch'] . "</h5>";
+                    echo "<h5>" . $item['name_en'] . "</h5>";
+                    echo "<h6>NT$" . $item['price'] . "</h6>";
+                    echo "</div>";
+                    echo "</div>";
+                }
 
-            ?>
+                ?>
 
+
+            </div>
 
         </div>
     </div>
+    <div class="clearfix"></div>
 </div>
+
 
 <!--====more====-->
 
@@ -75,7 +80,12 @@ while ($row = mysqli_fetch_array($result)) {
     <div class="container">
         <div class="col-xs-12 col-sm-12">
             <div class="textcenter">
-                <img src="assets/images/product/banner.jpg" alt="">
+                <div class="content">
+
+                    <img src="assets/images/event.png" alt="">
+
+                </div>
+
             </div>
         </div>
     </div>

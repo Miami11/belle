@@ -1562,7 +1562,7 @@ div.tab button.active {
 }
 
 .serviceSection .pic {
-    background-image: url("../images/servicebanner6.jpg");
+    background-image: url("../images/bottombg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -1593,6 +1593,7 @@ div.tab button.active {
 
 .product-text {
     text-align: center;
+    background-color: white;
 }
 
 .wrapperReal .pic {
@@ -2038,7 +2039,9 @@ hr {
     width: 100%;
     /*position: relative;*/
 }
-
+.product-holder{
+    background-color: white;
+}
 .product-holder img {
     /*width: 100%;*/
     vertical-align: middle;
@@ -2058,14 +2061,47 @@ hr {
     margin: auto;
     width: 160px;
 }
-
+.product-wrapper{
+    background-image: url("../images/productBg.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+    display: block;
+    padding: 60px 0;
+}
 .productGroup {
     /*padding-bottom: 100px;*/
     display: block;
+
+}
+.item31 {
+    width: 30%;
+    max-width: 360px;
+    background-image: url("../images/w1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.item32 {
+    width:70%;
+    max-width: 710px;
+    background-image: url("../images/event.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    margin: auto;
+}
+.more .item{
+    float:left;
+    height: 360px;
+    margin: 20px;
+    width: 100%;
+
 }
 
 .product {
     height: 300px;
+
 }
 
 
